@@ -47,9 +47,15 @@ h1 {
  
 }
 
-.social-container{
+.social-container {
   display: inline-block;
   float:left;
   margin-right: 15px;
+}
+
+.navbar-logo {
+	height: 30px;
+	display: block; 
+	padding-left: 4px;
 }
 
