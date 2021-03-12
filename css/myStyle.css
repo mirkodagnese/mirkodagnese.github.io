@@ -1,12 +1,14 @@
 @charset "UTF-8";
 /* CSS Document */
+
 html, body {
   <link rel="preconnect"href="https://fonts.gstatic.com" > <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"rel="stylesheet" > ;
   font-size: 22px;
 }
+
 .container-fluid {
-  margin-left: 80px !important;
-  margin-right: 80px !important;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .navbar {
@@ -69,7 +71,6 @@ hr {
     /*display: flex;*/
     align-items: center;
     overflow: hidden;
-	
 }
 
 .fill img {
