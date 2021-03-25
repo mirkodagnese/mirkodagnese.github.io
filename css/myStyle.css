@@ -142,3 +142,9 @@ hr {
 	display: block;
 }
 
+.my-form {
+	border: solid;
+	border-width: 1px;
+	border-color: #C8C8C8;
+	padding: 10px;
+}
