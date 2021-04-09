@@ -54,7 +54,7 @@
   <div class="space-top" style="margin-top: 10px">Message *</div>
   <textarea class="my-form" name="" id="" cols="30" rows="10" placeholder="Your Message..." required minlenght="10"></textarea>
   <div>
-    <input type="submit" class="space-top" style="margin-top: 10px" value="SUBMIT">
+    <input type="submit" class="space-top" style="margin-top: 10px; border-radius: none; color: white; background-color: #13022C; padding: 10px; border: none" value="SUBMIT">
   </div>
 </form>
 </div>
