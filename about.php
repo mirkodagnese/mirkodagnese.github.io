@@ -17,6 +17,7 @@
 <!-- body code goes here -->
 
 <!-- navbar code goes here -->
+	
 
   <nav id="myLogo" class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid"><a class="navbar-brand" href="#"><img class="navbar-logo" src="img/logo.svg" alt="Mirko D'Agnese"></a>
@@ -26,13 +27,13 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
-      <li class="nav-item"> <a class="nav-link" aria-current="page" href="index.html" style="float: right">
+      <li class="nav-item"> <a class="nav-link" aria-current="page" href="index.php" style="float: right">
           <mark>Projects</mark>
           </a></li>
-        <li class="nav-item"> <a class="nav-link" href="about.html" style="float: right">
+        <li class="nav-item"> <a class="nav-link" href="about.php" style="float: right">
           <mark>About</mark>
           </a> </li>
-        <li class="nav-item"> <a class="nav-link" href="contact.html" style="padding-right: 0px!important; float: right">
+        <li class="nav-item"> <a class="nav-link" href="contact.php" style="padding-right: 0px!important; float: right">
           <mark>Contact</mark>
           </a> </li>
      </ul>

@@ -123,6 +123,10 @@ hr {
 	margin: 0 5px;
 }
 
+.project-cell p{
+	margin-bottom: 0px;
+}
+
 .fill {
     /*display: flex;*/
     align-items: center;
@@ -145,6 +149,63 @@ hr {
 .my-form {
 	border: solid;
 	border-width: 1px;
-	border-color: #C8C8C8;
-	padding: 10px;
+	border-color: #EFEFEF;
+	padding: 10px 18px;
+}
+
+.form-dimension-small{
+	width: 350px;
+}
+
+.form-dimension-large{
+	width: 705px;
+}
+
+.text-footer{
+	height: 110px;
+	width: 100%;
+	background-color: #F0F0F0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+}
+
+.text-footer p{
+	margin: 0px;
+}
+
+.description-product {
+	display: flex;
+	justify-content: center;
+	/*flex-direction: column;*/
+}
+
+.form-contact{
+	display: flex; 
+	justify-content: center;
+}
+
+.top-text{
+	font-size: 15px;
+	margin-bottom: 8px;
+	margin-top: 20px;
+}
+
+.click-submit{
+	margin-top: 10px; 
+	border-radius: 50px; 
+	color: white; 
+	background-color: #13022C; 
+	border: none;
+	margin-bottom: 100px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 60px;
+	padding-left: 60px;
+}
+
+::placeholder {
+  color: #CECECE;
+  font-weight: 300;
 }
