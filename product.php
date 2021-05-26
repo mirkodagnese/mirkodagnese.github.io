@@ -18,28 +18,6 @@
 
 <?php include("custom-header.php"); ?>
 	
- <nav id="myLogo" class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid"><a class="navbar-brand" href="#"><img class="navbar-logo" src="img/logo.svg" alt="Mirko D'Agnese"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
-      <li class="nav-item"> <a class="nav-link" aria-current="page" href="index.php" style="float: right">
-          <mark>Projects</mark>
-          </a></li>
-        <li class="nav-item"> <a class="nav-link" href="about.php" style="float: right">
-          <mark>About</mark>
-          </a> </li>
-        <li class="nav-item"> <a class="nav-link" href="contact.php" style="padding-right: 0px!important; float: right">
-          <mark>Contact</mark>
-          </a> </li>
-     </ul>
-    </div>
-	  </div>
-</nav>
-
 <!-- description product code goes here -->
 
 <div class="description-product" style="display: grid; margin-right: 250px; margin-left: 250px; margin-bottom: 100px">
@@ -65,11 +43,7 @@
 	
 <!-- footer code goes here -->
 
-<footer>
-<div class="text-footer">
-	<p>• All works © Mirko D’Agnese. / Please do not reproduce without the expressed written consent • mirkoddesigner@gmail.com •</p></div>
-
-</footer>
+<?php include("custom-footer.php"); ?>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="js/jquery-3.4.1.min.js"></script> 

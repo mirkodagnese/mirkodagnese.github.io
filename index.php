@@ -17,30 +17,6 @@
 <!-- navbar code goes here -->
 
 <?php include("custom-header.php"); ?>
-	
- <nav id="myLogo" class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid"><a class="navbar-brand" href="#"><img class="navbar-logo" src="img/logo.svg" alt="Mirko D'Agnese"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
-      <li class="nav-item"> <a class="nav-link" aria-current="page" href="index.php" style="float: right">
-          <mark>Projects</mark>
-          </a></li>
-        <li class="nav-item"> <a class="nav-link" href="about.php" style="float: right">
-          <mark>About</mark>
-          </a> </li>
-        <li class="nav-item"> <a class="nav-link" href="contact.php" style="padding-right: 0px!important; float: right">
-          <mark>Contact</mark>
-          </a> </li>
-     </ul>
-    </div>
-	  </div>
-</nav>
-
-
 
 <!-- presentation code goes here -->
 
@@ -72,6 +48,51 @@
     </div>
   </div>
 </div>
+<?php
+
+include( 'product-object.php' );
+
+$list = array([
+  new Product( "BRAINSTON", "Logo & UI/UX App", "DESCRIPTION", "img/brainston.png", [] )
+]);
+	
+#$title = "title";
+#$shortDescription = "shortDescription";
+#$thumbnail = "thumbnail";
+
+foreach ( $list as $product ) {
+
+  $title = $product->title;
+  $shortDescription = $product->shortDescription;
+  $thumbnail = $product->thumbnail;
+
+# includeWithVariables('product-cell.php', array('title' => $title, 'shortDescription' => $shortDescription, 'thumbnail' => $thumbnail ));
+
+}
+
+function includeWithVariables( $filePath, $variables = array(), $print = true ) {
+  $output = NULL;
+  if ( file_exists( $filePath ) ) {
+    // Extract the variables to a local namespace
+    extract( $variables );
+
+    // Start output buffering
+    ob_start();
+
+    // Include the template file
+    include $filePath;
+
+    // End buffering and return its contents
+    $output = ob_get_clean();
+  }
+  if ( $print ) {
+    print $output;
+  }
+  return $output;
+
+}
+
+?>
 
 <!-- projects code goes here -->
 
@@ -153,26 +174,19 @@
     <div class="col-7 fill" style="height: 300px"> <img src="img/rèvoison.jpg" alt="" style="object-position:0"> </div>
   </div>
 </div>
-
+ 
 <!-- ancorpoint code goes here -->
 
 <div class="project-cell"> <a href="#myLogo" style="text-decoration: none">
   <div style="margin-top:80px; margin-bottom: 80px; display: flex; justify-content: center; align-items: center">
-    
-      <p style="color: black">Back to top</p>
-      <div class="arrow-container"> <img class="arrow-image" src="img/arrowRight.svg" alt="arrow" style="transform: rotate(270deg)"> </div>
-    
+    <p style="color: black">Back to top</p>
+    <div class="arrow-container"> <img class="arrow-image" src="img/arrowRight.svg" alt="arrow" style="transform: rotate(270deg)"> </div>
   </div>
   </a> </div>
-	
+
 <!-- footer code goes here -->
 
-<footer>
-<div class="text-footer">
-	<p>• All works © Mirko D’Agnese. / Please do not reproduce without the expressed written consent • mirkoddesigner@gmail.com •</p></div>
-
-</footer>
-
+<?php include("custom-footer.php"); ?>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="js/jquery-3.4.1.min.js"></script> 
