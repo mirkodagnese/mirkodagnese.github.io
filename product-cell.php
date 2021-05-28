@@ -1,37 +1,38 @@
-<!--
-include('product-object.php');
+<?php
 
-$title = $_GET["title"];
-$shortDescription = $_GET["shortDescription"];
-$thumbnail = $_GET["thumbnail"];
+$title = $product->getTitle();
+$urlTitle = urlencode($title);
+$shortDescription = $product->getShortDescription();
+$urlShortDescription = urlencode($shortDescription);
+$thumbnail = $product->getThumbnail();
+$urlThumbnail = urlencode($thumbnail);
 
-echo '
+$description = $product->getDescription();
+$urlDescription = urlencode($description);
+$images = implode("|",$product->getImages());
+$urlImages = urlencode($images);
 
-<div class="project-cell" style="margin-top: 120px">
-  <div class="row">
-    <div class="col-5">
-      <div style="vertical-align: middle">
-        <h6 style="margin-top: 80px">' + $title + '</h6>
-        <h5>' + $shortDescription + '</h5>
-        <hr align="left" size="2" width="20%" style="background-color: #13022C">
-        <p>VIEW PROJECT →</p>
+$url = "product.php?title={$urlTitle}&shortDescription={$urlShortDescription}&thumbnail={$urlThumbnail}&description={$urlDescription}";
+
+if (!empty($product->getImages())) {
+    $url .= "&images={$urlImages}";
+}
+
+echo "
+<a href='{$url}' style='text-decoration: none'>
+  <div class='project-cell' style='margin-top: 120px'>
+    <div class='row'>
+      <div class='col-5'>
+        <div style='vertical-align: middle'>
+          <h6 style='margin-top: 80px; color: black'>{$title}</h6>
+          <h5 style='color: black'>{$shortDescription}</h5>
+          <hr align='left' size='2' width='20%' style='background-color: #13022C'>
+          <p style='color: black'>VIEW PROJECT →</p>
+        </div>
       </div>
+      <div class='col-7 fill' style='height: 300px'> <img src='{$thumbnail}' alt='' style='object-position:0'> </div>
     </div>
-    <div class="col-7 fill" style="height: 300px"> <img src="' + $thumbnail + '" alt="" style="object-position:0"> </div>
   </div>
-</div>
--->
-
-<div class="project-cell" style="margin-top: 120px">
-  <div class="row">
-    <div class="col-5">
-      <div style="vertical-align: middle">
-        <h6 style="margin-top: 80px"> <?php echo $title ?> </h6>
-        <h5> <?php echo $shortDescription ?>  </h5>
-        <hr align="left" size="2" width="20%" style="background-color: #13022C">
-        <p>VIEW PROJECT →</p>
-      </div>
-    </div>
-    <div class="col-7 fill" style="height: 300px"> <img src="<?php echo $thumbnail ?>" alt="" style="object-position:0"> </div>
-  </div>
-</div>
+</a>
+"
+?>
