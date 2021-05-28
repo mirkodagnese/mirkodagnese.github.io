@@ -19,7 +19,7 @@ if (!empty($product->getImages())) {
 }
 
 echo "
-<a href='{$url}' style='text-decoration: none'>
+<a href='{$url}' style='text-decoration: none' target='_blank'>
   <div class='project-cell' style='margin-top: 120px'>
     <div class='row'>
       <div class='col-5'>

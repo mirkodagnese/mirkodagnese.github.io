@@ -24,11 +24,15 @@
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-6">
-				<img id="img_wrap" src="img/mirkodagnesem.jpg" alt="" style="">
+			<div class="col-md-6">
+				<img id="img_wrap" src="img/mirkodagnesem.jpg" alt="" style="padding-bottom: 80px; width: 100%;
+  height: auto;">
 			</div>
 			<div class="col-6">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae amet sint nobis repudiandae culpa rerum debitis. Tempore, architecto! Eligendi rem maiores veniam obcaecati, quis nulla sunt laboriosam ipsam eos?</p>
+				<h4 style="color: #13022C">Hello everyone!</h4>
+				<p style="font-size: 18px">I'm creative innovator, branding strategist, and design expert with experience creating impactful visual solutions for various industry. I'm studied at the Comics School of Naples were I learned more on the graphic and editorial part, as logos, branding, posters, labels, UI/UX design for web and mobile version and its development.
+My main skillsets include the creation of company logo and its brand, typography, advertising for social media, User Interface (UI), User Experience (UX) and code.
+I have the ability to take complex data and present it in a clear, digestible way to audience.</p>
 			</div>
 		</div>
 	</div>
