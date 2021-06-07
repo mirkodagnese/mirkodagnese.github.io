@@ -38,7 +38,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid" style="margin-bottom: 45px">
     <div class="row" style="margin-top:30px">
         <div class="col-12">
             <div class="social-container"> <a class="behance-image" href=""></a></div>
@@ -78,7 +78,7 @@
 
 <div class="project-cell">
     <a href="#myLogo" style="text-decoration: none">
-        <div style="margin-top:80px; margin-bottom: 80px; display: flex; justify-content: center; align-items: center">
+        <div style="margin-top:65px; margin-bottom: 65px; display: flex; justify-content: center; align-items: center">
             <p style="color: black">Back to top</p>
             <div class="arrow-container"> <img class="arrow-image" src="img/arrowRight.svg" alt="arrow" style="transform: rotate(270deg)"> </div>
         </div>

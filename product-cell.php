@@ -5,14 +5,13 @@ $urlTitle = urlencode($title);
 $shortDescription = $product->getShortDescription();
 $urlShortDescription = urlencode($shortDescription);
 $thumbnail = $product->getThumbnail();
-$urlThumbnail = urlencode($thumbnail);
 
 $description = $product->getDescription();
 $urlDescription = urlencode($description);
 $images = implode("|",$product->getImages());
 $urlImages = urlencode($images);
 
-$url = "product.php?title={$urlTitle}&shortDescription={$urlShortDescription}&thumbnail={$urlThumbnail}&description={$urlDescription}";
+$url = "product.php?title={$urlTitle}&shortDescription={$urlShortDescription}&description={$urlDescription}";
 
 if (!empty($product->getImages())) {
     $url .= "&images={$urlImages}";
@@ -20,7 +19,7 @@ if (!empty($product->getImages())) {
 
 echo "
 <a href='{$url}' style='text-decoration: none' target='_blank'>
-  <div class='project-cell' style='margin-top: 120px'>
+  <div class='project-cell' style='padding-top: 65px'>
     <div class='row'>
       <div class='col-5'>
         <div style='vertical-align: middle'>

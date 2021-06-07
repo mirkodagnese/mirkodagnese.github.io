@@ -4,12 +4,42 @@ include 'product-object.php';
 include 'global.php';
 
 $products = array(
-    new Product("BRAINSTON", "Logo & UI/UX App", "DESCRIPTION", "img/brainston.png", array("img/placeholder.png","img/placeholder.png","img/placeholder.png") ),
-    new Product("KAHUA", "Chocolate Label", "DESCRIPTION", "img/ChocolatePackaging Mockup - Kahua.png", array() ),
-    new Product("VARIOUS", "Post Design Social Media", "DESCRIPTION", "img/various.png", array() ),
-    new Product("ASIDE", "Magazine Design", "DESCRIPTION", "img/placeholder.png", array() ),
-    new Product("HEIDRUNN", "Beer Label Design", "DESCRIPTION", "img/heidrunn.png", array() ),
-    new Product("RÉVOISON", "Logo Design & Branding", "DESCRIPTION", "img/rèvoison.jpg", array() ),
+    new Product("BRAINSTON", 
+				"Logo & UI/UX App", 
+				"DESCRIPTION", 
+				"img/brainston.png", 
+				array("img/brainston/Brainston-01.png","img/brainston/Brainston-02.png","img/brainston/Brainston-03.png","img/brainston/Brainston-04.png","img/brainston/Brainston-05.png","img/brainston/Brainston-06.png","img/brainston/Brainston-07.png","img/brainston/Brainston-08.png","img/brainston/Brainston-09.png","img/brainston/Brainston-10.png","img/brainston/Brainston-11.png","img/brainston/Brainston-12.png") 
+			   ),
+    new Product("KAHUA", 
+				"Chocolate Label", 
+				"DESCRIPTION", 
+				"img/kahua.jpg", 
+				array() 
+			   ),
+    new Product("VARIOUS", 
+				"Post Design Social Media", 
+				"DESCRIPTION", 
+				"img/various.png", 
+				array() 
+			   ),
+    new Product("ASIDE", 
+				"Magazine Design", 
+				"DESCRIPTION", 
+				"img/aside.jpg", 
+				array() 
+			   ),
+    new Product("HEIDRUNN", 
+				"Beer Label Design", 
+				"DESCRIPTION", 
+				"img/heidrunn.png",
+				array() 
+			   ),
+    new Product("RÉVOISON", 
+				"Logo Design & Branding",
+				"DESCRIPTION",
+				"img/rèvoison.jpg",
+				array()
+			   ),
 );
 
 foreach ( $products as $product ) {
