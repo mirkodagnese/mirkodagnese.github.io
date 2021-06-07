@@ -22,8 +22,8 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-8">
-            <h1>Hi, I’m Mirko.<br>
+        <div class="col-md-8">
+            <h1 class="h1-mobile">Hi, I’m Mirko.<br>
                 Graphic & Web<br>
                 Designer living<br>
                 in Naples, Italy.</h1>
@@ -49,17 +49,12 @@
     </div>
 </div>
 
-<!-- projects code goes here -->
-
-<!-- TODO: MIRKO AGGIUNGI STATO DI HOVER ALL'ELEMENTO QUI SOTTO
-           PS: NON MODIFICARE I CAMPI {$title} {$shortDescription} {$thumbnail}
-               QUESTO ELEMENTO SARÀ CANCELLATO UN VOLTA DEFINITO LO STILE
--->
+<!-- projects code goes here
 
 <a href='product.php' style='text-decoration: none'>
     <div class='project-cell' style='margin-top: 120px'>
-        <div class='row'>
-            <div class='col-5'>
+        <div class='row' style="margin: 0">
+            <div class='col-md-5'>
                 <div style='vertical-align: middle'>
                     <h6 style='margin-top: 80px; color: black'>{$title}</h6>
                     <h5 style='color: black'>{$shortDescription}</h5>
@@ -67,18 +62,18 @@
                     <p style='color: black'>VIEW PROJECT →</p>
                 </div>
             </div>
-            <div class='col-7 fill' style='height: 300px'> <img src='{$thumbnail}' alt='' style='object-position:0'> </div>
+            <div class='col-md-7 fill' style='height: 300px'> <img src='{$thumbnail}' alt='' style='object-position:0'> </div>
         </div>
     </div>
 </a>
-
+-->
 <?php include("products-list.php"); ?>
 
 <!-- ancorpoint code goes here -->
 
-<div class="project-cell">
+<div class="anchor-point">
     <a href="#myLogo" style="text-decoration: none">
-        <div style="margin-top:65px; margin-bottom: 65px; display: flex; justify-content: center; align-items: center">
+        <div style="margin-top:65px; margin-bottom: 65px; display: flex; justify-content: center; align-items: baseline">
             <p style="color: black">Back to top</p>
             <div class="arrow-container"> <img class="arrow-image" src="img/arrowRight.svg" alt="arrow" style="transform: rotate(270deg)"> </div>
         </div>

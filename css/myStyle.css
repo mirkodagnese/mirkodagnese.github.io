@@ -2,22 +2,37 @@
 /* CSS Document */
 
 html, body {
-  <link rel="preconnect"href="https://fonts.gstatic.com" > <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"rel="stylesheet" > ;
-  font-size: 25px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-size: 25px;
 }
 
-.container-fluid {
-  padding-left: 80px!important;
-  padding-right: 80px!important;
+@media only screen and (min-width: 768px) {
+	.container-fluid {
+		padding-left: 80px !important;
+		padding-right: 80px !important;
+	}
 }
 
 .navbar {
-  margin-top: 25px;
-  margin-bottom: 100px;
+	margin-top: 25px;
+	margin-bottom: 100px;
+	padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.navbar {
+		margin-top: 25px;
+		margin-bottom: 65px;
+		padding: 0 10px;
+	}
 }
 
 .navbar-nav {
-  margin-left: auto !important;
+	margin-left: auto !important;
 }
 
 mark {
@@ -26,26 +41,32 @@ mark {
 }
 
 mark:hover {
-  display: inline-block;
-  line-height: 0em;
-  padding-bottom: 0.6em;
-  background-color: #F4EE49;
+	display: inline-block;
+	line-height: 0;
+	padding-bottom: 0.6em;
+	background-color: #F4EE49;
+}
+
+@media only screen and (max-width: 767px){
+	.h1-mobile {
+		font-size: 2rem;
+	}
 }
 
 h1 {
-  font-weight: regular;
-  font-size: 3rem;
-  color: #13022C;
+	font-weight: regular;
+	font-size: 3rem;
+	color: #13022C;
 }
 
 .arrow-container {
-  display: inline-block;
-  margin-left: 25px;
+	display: inline-block;
+	margin-left: 25px;
 }
 
 .arrow-image {
-  display: block;
-  vertical-align: middle;
+	display: block;
+	vertical-align: middle;
 }
 
 .behance-image {
@@ -101,36 +122,86 @@ h1 {
 }
 
 .social-container {
-  display: inline-block;
-  float:left;
-  margin-right: 15px;
+	display: inline-block;
+	float:left;
+	margin-right: 15px;
 }
 
 .navbar-logo {
 	height: 30px;
-	display: block; 
+	display: block;
 	padding-left: 4px;
 }
 
 hr {
 	border-top: 5px solid rgba(0, 0, 0, 0.1);
 	margin-top: 3px!important;
-    
+
+}
+
+.anchor-point {
+	padding: 0 80px;
+	margin: 0 5px;
 }
 
 .project-cell {
-	padding: 0px 80px; 
-	margin: 0 5px;
+	padding: 0 80px;
+	display: flex;
+	margin-top: 65px;
+	max-height: 450px;
+	align-items: center;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+	.project-cell {
+		display: initial;
+		height: auto;
+	}
 }
 
 .project-cell p{
 	margin-bottom: 0px;
 }
 
+.project-cell-caption {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.project-cell-caption {
+		display: flex;
+		align-items: center;
+		margin-bottom: 0;
+		padding: 0 15px;
+	}
+}
+
+.project-cell-row {
+	margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.project-cell-row {
+		margin: 0 5px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.project-cell-caption {
+		display: flex;
+		align-items: center;
+		margin-bottom: 25px;
+	}
+}
+
 .fill {
-    /*display: flex;*/
-    align-items: center;
-    overflow: hidden;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
 }
 
 .fill img {
@@ -141,7 +212,7 @@ hr {
 
 
 #img_wrap {
-    width: 100%;
+	width: 100%;
 	height: 100%;
 	display: block;
 }
@@ -182,7 +253,7 @@ hr {
 }
 
 .form-contact{
-	display: flex; 
+	display: flex;
 	justify-content: center;
 }
 
@@ -193,10 +264,10 @@ hr {
 }
 
 .click-submit{
-	margin-top: 10px; 
-	border-radius: 50px; 
-	color: white; 
-	background-color: #13022C; 
+	margin-top: 10px;
+	border-radius: 50px;
+	color: white;
+	background-color: #13022C;
 	border: none;
 	margin-bottom: 100px;
 	padding-top: 15px;
@@ -206,6 +277,6 @@ hr {
 }
 
 ::placeholder {
-  color: #CECECE;
-  font-weight: 300;
+	color: #CECECE;
+	font-weight: 300;
 }
