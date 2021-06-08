@@ -27,13 +27,15 @@ img {
 mark {
 	display: inline-block;
 	background-color: transparent;
+	color: #AAAAAA;
+}
+
+.nav-selected {
+	color: #333333;
 }
 
 mark:hover {
-	display: inline-block;
-	line-height: 0;
-	padding-bottom: 0.6em;
-	background-color: #F4EE49;
+	color: #333333;
 }
 
 .h1-custom {
@@ -44,12 +46,6 @@ mark:hover {
 	margin-bottom: 10px;
 	display: flex;
 	justify-content: center;
-}
-
-h1 {
-	font-weight: regular;
-	font-size: 3rem;
-	color: #13022C;
 }
 
 .arrow-container {
@@ -166,6 +162,7 @@ hr {
 
 .project-cell-row {
 	margin: 0;
+	width: 100%;
 }
 
 .fill {
@@ -206,7 +203,7 @@ hr {
 	margin: 0 auto -110px;
 }
 
-.footer, .push {
+footer, .push {
 	height: 110px;
 }
 
@@ -236,8 +233,11 @@ hr {
 
 .description-product {
 	display: flex;
-	justify-content: center;
-	/*flex-direction: column;*/
+	flex-direction: column;
+	align-items: flex-start;
+	margin-right: 250px;
+	margin-left: 250px;
+	margin-bottom: 100px
 }
 
 .form-contact{

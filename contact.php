@@ -83,7 +83,7 @@ if(isset($_POST['submit'])){
             </div>
             <div class="row">
                 <div class="col-md">
-                    <textarea class="my-form" name="message" cols="30" rows="10" placeholder="Please enter your comments…" minlength="10" required></textarea>
+                    <textarea class="my-form" name="message" cols="30" rows="10" placeholder="Please enter your comments…" minlength="10" maxlength="1000" required></textarea>
                 </div>
             </div>
         </div>

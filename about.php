@@ -31,7 +31,7 @@
         </div>
         <div class="col-md-6">
             <h4 style="color: #13022C">Hello everyone!</h4>
-            <p style="font-size: 18px">I'm a creative innovator, branding strategist, and designer with experience that creates impactful visual solutions for industries. I graduated at the Comics School of Naples, studying for three years graphic and web design. <br>My main skillsets include companies'logo and brand creation, typography, advertising for social media, posters, labels, and User Interface (UI), User Experience (UX) design and development.<br>
+            <p style="font-size: 18px; color: rgb(51, 51, 51)">I'm a creative innovator, branding strategist, and designer with experience that creates impactful visual solutions for industries. I graduated at the Comics School of Naples, studying for three years graphic and web design. <br>My main skillsets include companies'logo and brand creation, typography, advertising for social media, posters, labels, and User Interface (UI), User Experience (UX) design and development.<br>
                 I have the ability to take complex data and present them in a clear, digestible way to the audience.</p>
         </div>
     </div>

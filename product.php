@@ -29,10 +29,11 @@ $thumbnail = $_GET["thumbnail"];
 $images = $_GET["images"];
 
 echo "
-<div class='description-product' style='display: grid; margin-right: 250px; margin-left: 250px; margin-bottom: 100px'>
-    <h1>{$shortDescription}</h1>
+<div class='description-product'>
+    <h4>{$title}</h4>
+    <h2>{$shortDescription}</h2>
     <hr align='left' size='2' width='20%' style='background-color: #13022C'>
-    <p>{$description}</p>
+    <p style='color: rgb(51, 51, 51)'>{$description}</p>
 </div>
 
 <div class='col-12 fill' style='padding-left: 250px; padding-right: 250px; justify-content: center; display: flex; flex-direction: column;'>";

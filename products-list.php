@@ -6,7 +6,7 @@ include 'global.php';
 $products = array(
 	new Product("BRAINSTON",
 		"Logo & UI/UX App",
-		"DESCRIPTION",
+		"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
 		"img/brainston.jpg",
 		array("img/brainston/Brainston-01.jpg","img/brainston/Brainston-02.jpg","img/brainston/Brainston-03.jpg","img/brainston/Brainston-04.jpg","img/brainston/Brainston-05.jpg","img/brainston/Brainston-06.jpg","img/brainston/Brainston-07.jpg","img/brainston/Brainston-08.jpg","img/brainston/Brainston-09.jpg","img/brainston/Brainston-10.jpg","img/brainston/Brainston-11.jpg","img/brainston/Brainston-12.jpg")
 	),
@@ -18,7 +18,7 @@ $products = array(
 	),
 	new Product("VARIOUS",
 		"Post Design Social Media",
-		"DESCRIPTION",
+		"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
 		"img/various-social.jpg",
 		array("img/various-social.jpg","img/various-social/social-02.jpg","img/various-social/social-03.jpg","img/various-social/social-04.jpg","img/various-social/social-05.jpg","img/various-social/social-06.jpg")
 	),
