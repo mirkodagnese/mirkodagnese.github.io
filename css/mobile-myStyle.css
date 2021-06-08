@@ -19,6 +19,12 @@
     }
 }
 
+@media only screen and (max-width: 767px){
+    .h2-custom {
+        font-size: 1.75rem;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .project-cell {
         display: initial;
@@ -68,5 +74,23 @@
 @media only screen and (max-width: 1200px) {
     .text-footer {
         font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .top-space {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .my-form {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .click-submit {
+        font-size: 18px;
     }
 }

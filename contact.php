@@ -41,39 +41,54 @@ if(isset($_POST['submit'])){
 
 <!-- form code goes here -->
 
-<h2 style="margin-bottom: 10px; display: flex; justify-content: center;">Contact Me</h2>
+<h2 class="h2-custom">Contact Me</h2>
 <div class="form-contact">
-    <form action="" method="post" style="display: flex; align-items: center; flex-direction: column;">
-        <div>
-            <div class="top-text">YOUR NAME*</div>
-            <div>
-                <input class="my-form form-dimension-small" name="first_name" type="text" placeholder="First name..." required minlenght="3" maxlength="12">
-                <input class="my-form form-dimension-small" name="last_name" type="text" placeholder="Surname..." required minlenght="3" maxlength="12">
+    <form class="container-fluid" action="" method="post" style="display: flex; align-items: center; flex-direction: column;">
+        <div class="col-md">
+            <div class="row top-text">
+                <div class="col-md"> YOUR NAME* </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <input class="my-form" name="first_name" type="text" placeholder="First name..." required minlength="3" maxlength="12">
+                </div>
+                <div class="col-md top-space">
+                    <input class="my-form" name="last_name" type="text" placeholder="Last name..." required minlength="3" maxlength="12">
+                </div>
             </div>
         </div>
-        <div>
-            <div class="top-text space-top">EMAIL ADDRESS*</div>
-            <div>
-                <input class="my-form form-dimension-large" name="email" type="email" placeholder="Eg. example@email.com" required>
+        <div class="col-md">
+            <div class="row top-text">
+                <div class="col-md"> EMAIL ADDRESS* </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <input class="my-form" name="email" type="email" placeholder="Eg. example@email.com" required>
+                </div>
             </div>
         </div>
-        <div>
-            <div class="top-text space-top">PHONE NUMBER</div>
-            <div>
-                <input class="my-form form-dimension-large" name="phone_number" type="tel" placeholder="Eg. +33 3333333333">
+        <div class="col-md">
+            <div class="row top-text">
+                <div class="col-md"> PHONE NUMBER </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <input class="my-form" name="phone_number" type="tel" placeholder="Eg. +33 3333333333">
+                </div>
             </div>
         </div>
-        <div>
-            <div class="top-text space-top">MESSAGE*</div>
-            <textarea class="my-form form-dimension-large" name="message" cols="30" rows="10" placeholder="Please enter your comments…" minlenght="10" required></textarea>
+        <div class="col-md">
+            <div class="row top-text">
+                <div class="col-md"> MESSAGE* </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <textarea class="my-form" name="message" cols="30" rows="10" placeholder="Please enter your comments…" minlength="10" required></textarea>
+                </div>
+            </div>
         </div>
         <div style="display: flex; align-items: center">
-            <button class="space-top click-submit" type="submit" value="Submit" name="submit">
-                Submit
-                <img src="img/arrowRightWhite.svg" alt="Save icon" style="width: 32px; margin-left: 15px; "/>
-            </button>
-            <!--<input type="submit" class="space-top click-submit" value="Submit">
-            <img class="arrow-image" src="img/arrowRight.svg" alt="arrow">-->
+            <button class="click-submit" type="submit" value="Submit" name="submit"> Submit </button>
         </div>
     </form>
 </div>

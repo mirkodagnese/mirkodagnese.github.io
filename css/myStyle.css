@@ -10,6 +10,10 @@ html, body {
 	font-size: 25px;
 }
 
+img {
+	pointer-events: none;
+}
+
 .navbar {
 	margin-top: 25px;
 	margin-bottom: 50px;
@@ -34,6 +38,12 @@ mark:hover {
 
 .h1-custom {
 	font-size: 2.75rem;
+}
+
+.h2-custom {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
 }
 
 h1 {
@@ -180,6 +190,7 @@ hr {
 .my-form {
 	border: 1px solid #EFEFEF;
 	padding: 10px 18px;
+	width: 100%;
 }
 
 .form-dimension-small{
@@ -194,6 +205,7 @@ hr {
 	height: auto !important;
 	margin: 0 auto -110px;
 }
+
 .footer, .push {
 	height: 110px;
 }
@@ -207,6 +219,10 @@ hr {
 	align-items: center;
 	font-size: 18px;
 	padding: 1rem;
+	/*
+	position: absolute;
+	bottom: 0;
+	*/
 }
 
 .text-footer p {
@@ -235,14 +251,14 @@ hr {
 	margin-top: 20px;
 }
 
-.click-submit{
+.click-submit {
 	margin-top: 10px;
 	border-radius: 50px;
 	color: white;
-	background-color: #13022C;
+	background-color: black;
 	border: none;
-	margin-bottom: 100px;
-	padding: 15px 60px;
+	margin-bottom: 50px;
+	padding: 10px 60px;
 }
 
 ::placeholder {
