@@ -43,7 +43,7 @@ if(isset($_POST['submit'])){
 
 <h2 class="h2-custom">Contact Me</h2>
 <div class="form-contact">
-    <form class="container-fluid" action="" method="post" style="display: flex; align-items: center; flex-direction: column;">
+    <form class="container-fluid" action="" method="post" style="display: flex; align-items: center; flex-direction: column; max-width: 1024px">
         <div class="col-md">
             <div class="row top-text">
                 <div class="col-md"> YOUR NAME* </div>
