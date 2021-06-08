@@ -23,7 +23,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-8">
-            <h1 class="h1-mobile">Hi, I’m Mirko.<br>
+            <h1 class="h1-custom">Hi, I’m Mirko.<br>
                 Graphic & Web<br>
                 Designer living<br>
                 in Naples, Italy.</h1>
@@ -31,16 +31,16 @@
     </div>
 </div>
 <div class="container-fluid">
-    <div class="row" style="margin-top:30px">
-        <div class="col-12">
-            <p style="float: left">ABOUT ME</p>
+    <div class="row" style="margin-top: 25px">
+        <div class="col">
+            <p style="float: left; margin-bottom: 0.5rem">ABOUT ME</p>
             <div class="arrow-container"> <img class="arrow-image" src="img/arrowRight.svg" alt="arrow"> </div>
         </div>
     </div>
 </div>
 <div class="container-fluid" style="margin-bottom: 45px">
     <div class="row" style="margin-top:30px">
-        <div class="col-12">
+        <div class="col">
             <div class="social-container"> <a class="behance-image" href="https://www.behance.net/mirkodagnese" target="_blank"></a></div>
             <div class="social-container"> <a class="dribble-image" href="https://www.dribbble.com/mirkodagnese" target="_blank"></a></div>
             <div class="social-container"> <a class="linkedin-image" href="https://www.linkedin.com/in/mirkodagnese" target="_blank"></a></div>
