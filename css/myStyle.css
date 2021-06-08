@@ -10,25 +10,10 @@ html, body {
 	font-size: 25px;
 }
 
-@media only screen and (min-width: 768px) {
-	.container-fluid {
-		padding-left: 80px !important;
-		padding-right: 80px !important;
-	}
-}
-
 .navbar {
 	margin-top: 25px;
 	margin-bottom: 50px;
 	padding: 0;
-}
-
-@media only screen and (max-width: 767px) {
-	.navbar {
-		margin-top: 25px;
-		margin-bottom: 65px;
-		padding: 0 10px;
-	}
 }
 
 .navbar-nav {
@@ -49,12 +34,6 @@ mark:hover {
 
 .h1-custom {
 	font-size: 2.75rem;
-}
-
-@media only screen and (max-width: 767px){
-	.h1-custom {
-		font-size: 2rem;
-	}
 }
 
 h1 {
@@ -147,6 +126,13 @@ hr {
 	padding: 0 80px;
 	margin: 0 5px;
 }
+ .div-anchor-point {
+	 margin-top: 65px;
+	 margin-bottom: 65px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+ }
 
 .project-cell {
 	padding: 0 80px;
@@ -155,13 +141,6 @@ hr {
 	max-height: 450px;
 	align-items: center;
 	overflow: hidden;
-}
-
-@media only screen and (max-width: 767px) {
-	.project-cell {
-		display: initial;
-		height: auto;
-	}
 }
 
 .project-cell p{
@@ -175,31 +154,8 @@ hr {
 	padding: 0;
 }
 
-@media only screen and (max-width: 767px) {
-	.project-cell-caption {
-		display: flex;
-		align-items: center;
-		margin-bottom: 0;
-		padding: 0 15px;
-	}
-}
-
 .project-cell-row {
 	margin: 0;
-}
-
-@media only screen and (max-width: 767px) {
-	.project-cell-row {
-		margin: 0 5px;
-	}
-}
-
-@media only screen and (max-width: 767px) {
-	.project-cell-caption {
-		display: flex;
-		align-items: center;
-		margin-bottom: 25px;
-	}
 }
 
 .fill {
@@ -253,8 +209,13 @@ hr {
 	padding: 1rem;
 }
 
-.text-footer p{
-	margin: 0px;
+.text-footer p {
+	margin: 0;
+}
+
+.p-text-anchor-point {
+	margin: 0;
+	color: black;
 }
 
 .description-product {
@@ -281,10 +242,7 @@ hr {
 	background-color: #13022C;
 	border: none;
 	margin-bottom: 100px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-right: 60px;
-	padding-left: 60px;
+	padding: 15px 60px;
 }
 
 ::placeholder {

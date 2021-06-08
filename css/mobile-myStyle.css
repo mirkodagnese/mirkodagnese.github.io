@@ -1,0 +1,72 @@
+@media only screen and (min-width: 768px) {
+    .container-fluid {
+        padding-left: 80px !important;
+        padding-right: 80px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar {
+        margin-top: 25px;
+        margin-bottom: 65px;
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 846px){
+    .h1-custom {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .project-cell {
+        display: initial;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .project-cell-caption {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .project-cell-row {
+        margin: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .project-cell-caption {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .div-anchor-point {
+        margin-top: 25px;
+        margin-bottom: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .p-text-anchor-point {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .text-footer {
+        font-size: 15px;
+    }
+}

@@ -8,6 +8,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
     <link href="css/myStyle.css" rel="stylesheet" type="text/css">
+    <link href="css/mobile-myStyle.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
@@ -71,14 +72,7 @@
 
 <!-- ancorpoint code goes here -->
 
-<div class="anchor-point">
-    <a href="#myLogo" style="text-decoration: none">
-        <div style="margin-top:65px; margin-bottom: 65px; display: flex; justify-content: center; align-items: baseline">
-            <p style="color: black">Back to top</p>
-            <div class="arrow-container"> <img class="arrow-image" src="img/arrowRight.svg" alt="arrow" style="transform: rotate(270deg)"> </div>
-        </div>
-    </a>
-</div>
+<?php include("anchor-point.php"); ?>
 
 <!-- footer code goes here -->
 
