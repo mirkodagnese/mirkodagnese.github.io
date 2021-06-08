@@ -33,9 +33,11 @@
 </div>
 <div class="container-fluid">
     <div class="row" style="margin-top: 25px">
-        <div class="col">
-            <p style="float: left; margin-bottom: 0.5rem">ABOUT ME</p>
-            <div class="arrow-container"> <img class="arrow-image" src="img/arrowRight.svg" alt="arrow"> </div>
+        <div class="col-md" style="display: flex; align-items: center; margin-bottom: 0.5rem">
+            <p style="float: left; margin-bottom: 0">ABOUT ME</p>
+            <div class="arrow-container">
+                <img class="arrow-image" style="width: 30px" src="img/arrowRight.svg" alt="arrow">
+            </div>
         </div>
     </div>
 </div>
