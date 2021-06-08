@@ -23,7 +23,7 @@ if (isset($product)) {
 <a href='{$url}' style='text-decoration: none' target='_blank'>
   <div class='project-cell'>
     <div class='row project-cell-row'>
-      <div class='col-md project-cell-caption'>
+      <div class='col-md-5 project-cell-caption'>
         <div style='vertical-align: middle'>
           <h6 style='color: black'>{$title}</h6>
           <h5 style='color: black'>{$shortDescription}</h5>
@@ -31,7 +31,7 @@ if (isset($product)) {
           <p style='color: black'>VIEW PROJECT →</p>
         </div>
       </div>
-      <div class='col-md fill'> <img src='{$thumbnail}' alt='' style='object-position:0'> </div>
+      <div class='col-md-7 fill'> <img src='{$thumbnail}' alt='' style='object-position:0'> </div>
     </div>
   </div>
 </a>

@@ -41,10 +41,10 @@
 <div class="container-fluid" style="margin-bottom: 45px">
     <div class="row" style="margin-top:30px">
         <div class="col-12">
-            <div class="social-container"> <a class="behance-image" href=""></a></div>
-            <div class="social-container"> <a class="dribble-image" href=""></a></div>
-            <div class="social-container"> <a class="linkedin-image" href=""></a></div>
-            <div class="social-container"> <a class="instagram-image" href=""></a></div>
+            <div class="social-container"> <a class="behance-image" href="https://www.behance.net/mirkodagnese" target="_blank"></a></div>
+            <div class="social-container"> <a class="dribble-image" href="https://www.dribbble.com/mirkodagnese" target="_blank"></a></div>
+            <div class="social-container"> <a class="linkedin-image" href="https://www.linkedin.com/in/mirkodagnese" target="_blank"></a></div>
+            <div class="social-container"> <a class="instagram-image" href="https://www.dribbble.com/mirkodagnese" target="_blank"></a></div>
         </div>
     </div>
 </div>
