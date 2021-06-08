@@ -43,7 +43,7 @@
 
 @media only screen and (max-width: 767px) {
     .project-cell-row {
-        margin: 0 5px;
+        margin: 0;
     }
 }
 

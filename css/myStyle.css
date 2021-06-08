@@ -48,6 +48,10 @@ mark:hover {
 	justify-content: center;
 }
 
+.container-fluid {
+	margin-left: 0;
+}
+
 .arrow-container {
 	display: inline-block;
 	margin-left: 25px;

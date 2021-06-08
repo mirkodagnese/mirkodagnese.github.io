@@ -26,7 +26,7 @@
 <div class="container-fluid" style="margin: 0">
     <div class="row">
         <div class="col-md-6">
-            <img id="img_wrap" src="img/mirkodagnesem.jpg" alt="" style="padding-bottom: 80px; width: 100%;
+            <img id="img_wrap" src="img/mirkodagnese.jpg" alt="" style="padding-bottom: 80px; width: 100%;
   height: auto;">
         </div>
         <div class="col-md-6">
