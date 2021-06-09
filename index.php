@@ -47,7 +47,7 @@
             <div class="social-container"> <a class="behance-image" href="https://www.behance.net/mirkodagnese" target="_blank"></a></div>
             <div class="social-container"> <a class="dribble-image" href="https://www.dribbble.com/mirkodagnese" target="_blank"></a></div>
             <div class="social-container"> <a class="linkedin-image" href="https://www.linkedin.com/in/mirkodagnese" target="_blank"></a></div>
-            <div class="social-container"> <a class="instagram-image" href="https://www.dribbble.com/mirkodagnese" target="_blank"></a></div>
+            <div class="social-container"> <a class="instagram-image" href="https://www.instagram.com/mirkodagnese" target="_blank"></a></div>
         </div>
     </div>
 </div>
