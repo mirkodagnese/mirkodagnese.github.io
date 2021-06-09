@@ -189,11 +189,26 @@ hr {
 	height: 100%;
 }
 
+.about-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
 
-#img_wrap {
+.about-image {
+	padding-bottom: 80px;
 	width: 100%;
 	height: 100%;
 	display: block;
+}
+
+.about-title {
+	color: #13022C;
+}
+
+.about-description {
+	font-size: 18px;
+	color: rgb(51, 51, 51);
 }
 
 .my-form {
@@ -278,7 +293,11 @@ footer, .push {
 	font-weight: 300;
 }
 
-/* TEST NAVBAR */
+.about-title {
+
+}
+
+/* NAVBAR */
 
 .navbar-toggler {
 	border: none;

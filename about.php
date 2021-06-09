@@ -11,8 +11,6 @@
     <link href="css/mobile-myStyle.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <style type="text/css">
-    </style>
 </head>
 <body>
 <!-- body code goes here -->
@@ -23,18 +21,16 @@
 
 <!-- image/description code goes here -->
 
-<div style="display: flex; align-items: center; flex-direction: column">
-    <div class="col-6">
-        <h4 style="color: #13022C">Oh Hey! It’s nice to meet you.</h4>
-        <p style="font-size: 18px; color: rgb(51, 51, 51)">I'm a creative innovator, branding strategist, and designer with experience that creates impactful visual solutions for industries. I graduated at the Comics School of Naples, studying for three years graphic and web design. <br>My main skillsets include companies' logo and brand creation, typography, advertising for social media, posters, labels, and User Interface (UI), User Experience (UX) design and development.<br>I have the ability to take complex data and present them in a clear, digestible way to the audience.</p>
+<div class="about-container">
+    <div class="col-md-6">
+        <h4 class="about-title">Oh Hey! It’s nice to meet you.</h4>
+        <p class="about-description">I'm a creative innovator, branding strategist, and designer with experience that creates impactful visual solutions for industries. I graduated at the Comics School of Naples, studying for three years graphic and web design. <br>My main skillsets include companies' logo and brand creation, typography, advertising for social media, posters, labels, and User Interface (UI), User Experience (UX) design and development.<br>I have the ability to take complex data and present them in a clear, digestible way to the audience.</p>
     </div>
 
-    <div class="col-6">
-        <img id="img_wrap" src="img/mirkodagnese.jpg" alt="" style="padding-bottom: 80px; width: 100%;
-  height: auto;">
+    <div class="col-md-6">
+        <img class="about-image" src="img/mirkodagnese.jpg" alt=""/>
     </div>
 </div>
-
 
 <!-- footer code goes here -->
 
