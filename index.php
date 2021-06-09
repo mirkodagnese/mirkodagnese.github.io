@@ -33,7 +33,7 @@
 </div>
 <div class="container-fluid">
     <div class="row" style="margin-top: 25px">
-        <div class="col-md" style="display: flex; align-items: center; margin-bottom: 0.5rem">
+        <div class="col-md" style="display: flex; align-items: baseline; margin-bottom: 0.5rem">
             <p style="float: left; margin-bottom: 0">ABOUT ME</p>
             <div class="arrow-container">
                 <img class="arrow-image" style="width: 30px" src="img/arrowRight.svg" alt="arrow">

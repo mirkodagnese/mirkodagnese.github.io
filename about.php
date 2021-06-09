@@ -23,19 +23,18 @@
 
 <!-- image/description code goes here -->
 
-<div class="container-fluid" style="margin: 0">
-    <div class="row">
-        <div class="col-md-6">
-            <img id="img_wrap" src="img/mirkodagnese.jpg" alt="" style="padding-bottom: 80px; width: 100%;
+<div style="display: flex; align-items: center; flex-direction: column">
+    <div class="col-6">
+        <h4 style="color: #13022C">Oh Hey! It’s nice to meet you.</h4>
+        <p style="font-size: 18px; color: rgb(51, 51, 51)">I'm a creative innovator, branding strategist, and designer with experience that creates impactful visual solutions for industries. I graduated at the Comics School of Naples, studying for three years graphic and web design. <br>My main skillsets include companies' logo and brand creation, typography, advertising for social media, posters, labels, and User Interface (UI), User Experience (UX) design and development.<br>I have the ability to take complex data and present them in a clear, digestible way to the audience.</p>
+    </div>
+
+    <div class="col-6">
+        <img id="img_wrap" src="img/mirkodagnese.jpg" alt="" style="padding-bottom: 80px; width: 100%;
   height: auto;">
-        </div>
-        <div class="col-md-6">
-            <h4 style="color: #13022C">Hello everyone!</h4>
-            <p style="font-size: 18px; color: rgb(51, 51, 51)">I'm a creative innovator, branding strategist, and designer with experience that creates impactful visual solutions for industries. I graduated at the Comics School of Naples, studying for three years graphic and web design. <br>My main skillsets include companies'logo and brand creation, typography, advertising for social media, posters, labels, and User Interface (UI), User Experience (UX) design and development.<br>
-                I have the ability to take complex data and present them in a clear, digestible way to the audience.</p>
-        </div>
     </div>
 </div>
+
 
 <!-- footer code goes here -->
 
