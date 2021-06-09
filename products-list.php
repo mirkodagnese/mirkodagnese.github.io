@@ -14,7 +14,7 @@ $products = array(
 		"Chocolate Label",
 		"DESCRIPTION",
 		"img/kauha.jpg",
-		array()
+		array("img/kauha/kauha-01.jpg","img/kauha/kauha-02.jpg","img/kauha/kauha-03.jpg","img/kauha/kauha-04.jpg","img/kauha/kauha-05.jpg","img/kauha/kauha-06.jpg","img/kauha/kauha-07.jpg","img/kauha/kauha-08.jpg","img/kauha/kauha-09.jpg","img/kauha/kauha-10.jpg","img/kauha/kauha-11.jpg","img/kauha/kauha-12.jpg","img/kauha/kauha-13.jpg","img/kauha/kauha-14.jpg",)
 	),
 	new Product("VARIOUS",
 		"Post Design Social Media",
