@@ -33,12 +33,14 @@
 </div>
 <div class="container-fluid">
     <div class="row" style="margin-top: 25px">
-        <div class="col-md" style="display: flex; align-items: baseline; margin-bottom: 0.5rem">
-            <p style="float: left; margin-bottom: 0">ABOUT ME</p>
-            <div class="arrow-container">
-                <img class="arrow-image" style="width: 30px" src="img/arrowRight.svg" alt="arrow">
+        <a href="about.php" style="text-decoration: none; color: black">
+            <div class="col-md" style="display: flex; align-items: baseline; margin-bottom: 0.5rem">
+                <p style="float: left; margin-bottom: 0">ABOUT ME</p>
+                <div class="arrow-container">
+                    <img class="arrow-image" style="width: 30px" src="img/arrowRight.svg" alt="arrow">
+                </div>
             </div>
-        </div>
+        </a>
     </div>
 </div>
 <div class="container-fluid" style="margin-bottom: 45px">
