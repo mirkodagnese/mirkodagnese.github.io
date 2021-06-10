@@ -262,9 +262,19 @@ footer, .push {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-right: 250px;
-	margin-left: 250px;
-	margin-bottom: 100px
+	margin-bottom: 10%;
+}
+
+.images-list-product-detail {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.image-product-detail {
+	object-position:0 20%;
+	aspect-ratio: 1400/800;
+	margin-bottom: 6%;
 }
 
 .form-contact{

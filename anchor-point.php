@@ -1,5 +1,5 @@
 <div class="anchor-point">
-    <a href="#myLogo" style="text-decoration: none">
+    <a href="#" onclick="$('html, body').animate({ scrollTop: $('#myLogo').offset().top }, 1000 )" style="text-decoration: none">
         <div class="div-anchor-point">
             <p class="p-text-anchor-point">Back to top</p>
             <div class="arrow-container">

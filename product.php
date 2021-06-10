@@ -29,38 +29,31 @@ $thumbnail = $_GET["thumbnail"];
 $images = $_GET["images"];
 
 echo "
-<div class='description-product'>
-    <h4>{$title}</h4>
-    <h2>{$shortDescription}</h2>
-    <hr align='left' size='2' width='20%' style='background-color: #13022C'>
-    <p style='color: rgb(51, 51, 51)'>{$description}</p>
-</div>
+<div class='col-md-8' style='margin-left: auto; margin-right: auto;'>
+    <div class='description-product'>
+        <h4>{$title}</h4>
+        <h2>{$shortDescription}</h2>
+        <hr align='left' size='2' width='20%' style='background-color: #13022C'>
+        <p style='color: rgb(51, 51, 51)'>{$description}</p>
+    </div>
 
-<div class='col-12 fill' style='padding-left: 250px; padding-right: 250px; justify-content: center; display: flex; flex-direction: column;'>";
+    <div class='col-md fill images-list-product-detail'>";
 
 $imagesList = explode("|", $images);
 
 if (!empty($imagesList) && $images != null) {
     foreach ($imagesList as $img) {
-        echo "<img src='{$img}' alt='' style='object-position:0 20%; aspect-ratio: 1400/800; margin-bottom: 65px'>";
+        echo "<img id='product-image' class='image-product-detail' src='{$img}' alt=''>";
     }
 }
 
-echo "</div>";
+echo "
+    </div>
+</div>
+
+";
 
 ?>
-
-<!--
- <div class="description-product" style="display: grid; margin-right: 250px; margin-left: 250px; margin-bottom: 100px">
-    <h1>Logo & UI/UX App</h1>
-    <hr align="left" size="2" width="20%" style="background-color: #13022C">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe necessitatibus quo, aliquam facilis. Sit beatae odit reiciendis doloremque impedit animi, minima quod ad, eius. Ullam impedit voluptatum atque necessitatibus tenetur?</p>
-</div>
-
-<div class="col-12 fill" style="padding-left: 250px; padding-right: 250px; justify-content: center; display: flex;">
-    <img src="img/placeholder.png" alt="" style="object-position:0 20%; aspect-ratio: 1400/800;">
-</div>
--->
 
 <!-- ancorpoint code goes here -->
 
