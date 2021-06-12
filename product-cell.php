@@ -1,23 +1,15 @@
 <?php
 
-if (isset($product)) {
-    $title = $product->getTitle();
+include_once 'data.php';
 
-    $urlTitle = urlencode($title);
+if (isset($name)) {
+    $product = $GLOBALS['data'][$name];
+
+    $title = $product->getTitle();
     $shortDescription = $product->getShortDescription();
-    $urlShortDescription = urlencode($shortDescription);
     $thumbnail = $product->getThumbnail();
 
-    $description = $product->getDescription();
-    $urlDescription = urlencode($description);
-    $images = implode("|",$product->getImages());
-    $urlImages = urlencode($images);
-
-    $url = "product.php?title={$urlTitle}&shortDescription={$urlShortDescription}&description={$urlDescription}";
-
-    if (!empty($product->getImages())) {
-        $url .= "&images={$urlImages}";
-    }
+    $url = "product.php?name={$name}";
 
     echo "
 <a href='{$url}' style='text-decoration: none' target='_blank'>

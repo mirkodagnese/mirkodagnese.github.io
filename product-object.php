@@ -16,15 +16,13 @@ class Product {
         $this->_images = $images;
     }
 
-    public function getTitle() { return $this->_title; }
+    public function getTitle(): string { return $this->_title; }
 
-    public function getShortDescription() { return $this->_shortDescription; }
+    public function getShortDescription(): string { return $this->_shortDescription; }
 
-    public function getThumbnail() { return $this->_thumbnail; }
+    public function getThumbnail(): string { return $this->_thumbnail; }
 
-    public function getDescription() { return $this->_description; }
+    public function getDescription(): string { return $this->_description; }
 
-    public function getImages() { return $this->_images; }
+    public function getImages(): array { return $this->_images; }
 }
-
-?>

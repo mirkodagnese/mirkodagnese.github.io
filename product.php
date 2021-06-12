@@ -22,11 +22,18 @@
 <!-- description product code goes here -->
 
 <?php
-$title = $_GET["title"];
-$shortDescription = $_GET["shortDescription"];
-$description = $_GET["description"];
-$thumbnail = $_GET["thumbnail"];
-$images = $_GET["images"];
+
+include_once "data.php";
+
+$name = $_GET["name"];
+
+$product = $GLOBALS["data"][$name];
+
+$title = $product->getTitle();
+$shortDescription = $product->getShortDescription();
+$description = $product->getDescription();
+$thumbnail = $product->getThumbnail();
+$images = $product->getImages();
 
 echo "
 <div class='col-md-8' style='margin-left: auto; margin-right: auto;'>
@@ -39,11 +46,29 @@ echo "
 
     <div class='col-md fill images-list-product-detail'>";
 
-$imagesList = explode("|", $images);
+if (!empty($images) && $images != null) {
+    foreach ($images as $img) {
+        switch ($img->getLayout()) {
+            case ProductImageLayout::FULLSCREEN:
+                echo "<img id='product-image' class='image-product-detail' src='{$img->getSource()}' alt=''>";
+                break;
+            case ProductImageLayout::TWO_COLUMNS:
+                echo "IMAGE WITH LAYOUT: TWO_COLUMNS";
+                break;
+            case ProductImageLayout::RIGHT_DESCRIPTION:
+                echo "IMAGE WITH LAYOUT: RIGHT_DESCRIPTION";
 
-if (!empty($imagesList) && $images != null) {
-    foreach ($imagesList as $img) {
-        echo "<img id='product-image' class='image-product-detail' src='{$img}' alt=''>";
+                break;
+            case ProductImageLayout::LEFT_DESCRIPTION:
+                echo "IMAGE WITH LAYOUT: LEFT_DESCRIPTION";
+                break;
+            case ProductImageLayout::BOTTOM_DESCRIPTION:
+                echo "IMAGE WITH LAYOUT: BOTTOM_DESCRIPTION";
+                break;
+            default:
+                echo "#### NO CASE PRESENT WITH INTEGER {$img->getLayout()} ####";
+                break;
+        }
     }
 }
 
