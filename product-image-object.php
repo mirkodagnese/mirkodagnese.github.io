@@ -7,7 +7,7 @@ class ProductImage {
     private $_layout;
     private $_description;
 
-    public function __construct(string $source, int $layout, array $twoSources = null, string $description = null) {
+    public function __construct(string $source, int $layout, array $twoSources = [], string $description = "") {
         $this->_source = $source;
         $this->_twoSources = $twoSources;
         $this->_layout = $layout;
