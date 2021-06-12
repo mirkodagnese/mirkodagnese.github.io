@@ -169,11 +169,25 @@ hr {
 	margin-bottom: 0;
 }
 
-.project-cell-caption {
+.project-cell:hover, .project-cell:hover * {
+	color: white;
+}
+
+.project-cell-caption-container {
 	display: flex;
 	align-items: center;
 	margin-bottom: 0;
 	padding: 0;
+}
+
+.project-cell-caption {
+	vertical-align: middle;
+	color: black;
+	margin-left: 0;
+}
+
+.project-cell-image-container {
+	padding-left: 0;
 }
 
 .project-cell-row {

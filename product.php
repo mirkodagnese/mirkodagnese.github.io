@@ -40,7 +40,7 @@ echo "
     <div class='description-product'>
         <h4>{$title}</h4>
         <h2>{$shortDescription}</h2>
-        <hr style='background-color: #13022C; width: 20%; margin-left: 0; border: 2px solid;'>
+        <hr style='color: #13022C; width: 20%; margin-left: 0; border: 2px solid;'>
         <p style='color: rgb(51, 51, 51)'>{$description}</p>
     </div>
 

@@ -32,11 +32,17 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .project-cell-caption {
+    .project-cell-caption-container {
         display: flex;
         align-items: center;
         margin-bottom: 0;
         padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .project-cell-image-container {
+        padding-left: 15px;
     }
 }
 
@@ -47,7 +53,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .project-cell-caption {
+    .project-cell-caption-container {
         display: flex;
         align-items: center;
         margin-bottom: 25px;
