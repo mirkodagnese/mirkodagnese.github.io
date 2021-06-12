@@ -40,8 +40,8 @@ echo "
     <div class='description-product'>
         <h4>{$title}</h4>
         <h2>{$shortDescription}</h2>
-        <hr style='color: #13022C; width: 20%; margin-left: 0; border: 2px solid;'>
-        <p style='color: rgb(51, 51, 51)'>{$description}</p>
+        <hr style='color: black; width: 20%; margin-left: 0; border: 2px solid;'>
+        <p class='product-detail-description'>{$description}</p>
     </div>
 
     <div class='col-md fill images-list-product-detail'>";
@@ -66,10 +66,10 @@ if (!empty($images) && $images != null) {
                 break;
             case ProductImageLayout::RIGHT_DESCRIPTION:
                 echo "<div class='row image-product-container'>
-                        <div class='col-md'>
-                            <img id='product-image' class='image-product-detail' style='aspect-ratio: 700/800' src='{$img->getSource()}' alt=''>
+                        <div class='col-md-6 image-product-detail'>
+                            <img id='product-image' class='image-product-detail image-product-detail-mobile' style='aspect-ratio: 700/800' src='{$img->getSource()}' alt=''>
                         </div>
-                        <div class='col-md image-product-description-container'>
+                        <div class='col-md-6 image-product-description-container'>
                             <p class='image-product-description' style='margin-bottom: 0'> {$img->getDescription()} </p>
                         </div>
                      </div>";

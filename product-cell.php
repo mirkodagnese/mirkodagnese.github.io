@@ -15,7 +15,7 @@ if (isset($name)) {
     echo "
 <style>
 #$name-caption-container.hovered {
-    transition: background-color 500ms;
+    transition: background-color 300ms;
 }
 
 .project-cell:hover #$name-caption-container.hovered {
@@ -24,7 +24,7 @@ if (isset($name)) {
 
 #$name-caption {
     margin-left: 0;
-    transition: margin 500ms;
+    transition: margin 300ms;
 }
 
 .project-cell:hover #$name-caption.hovered {
@@ -47,10 +47,10 @@ $(function() {
     <div class='row project-cell-row'>
       <div id='$name-caption-container' class='col-md-5 project-cell-caption-container'>
         <div id='$name-caption' class='project-cell-caption'>
-          <h6>{$title}</h6>
-          <h5>{$shortDescription}</h5>
-          <hr style='width: 20%; margin-left: 0; border: 2px solid;'>
-          <p>VIEW PROJECT →</p>
+          <h6 class='project-cell-name'>{$title}</h6>
+          <h5 class='project-cell-short-description'>{$shortDescription}</h5>
+          <hr class='project-cell-hr'>
+          <p class='project-cell-view-project'>VIEW PROJECT →</p>
         </div>
       </div>
       <div class='col-md-7 fill project-cell-image-container'> 

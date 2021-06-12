@@ -16,9 +16,13 @@ img {
 }
 
 .navbar {
-	margin-bottom: 50px;
+	margin-bottom: 150px;
 	padding: 0;
 	box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.navbar-light .navbar-brand {
+	color: black;
 }
 
 .navbar-nav {
@@ -52,6 +56,7 @@ mark:hover {
 
 .h1-custom {
 	font-size: 2.75rem;
+	color: black;
 }
 
 .h2-custom {
@@ -144,6 +149,10 @@ hr {
 
 }
 
+.social-icons {
+	margin-bottom: 120px;
+}
+
 .anchor-point {
 	padding: 0 80px;
 	margin: 0 5px;
@@ -195,6 +204,26 @@ hr {
 	width: 100%;
 }
 
+.project-cell-name {
+	font-weight: lighter;
+	font-size: 1rem;
+}
+
+.project-cell-short-description {
+	font-weight: 600;
+	font-size: 1.3rem;
+}
+
+.project-cell-hr {
+	width: 20%;
+	margin-left: 0;
+	border: 3px solid;
+}
+
+.project-cell-view-project {
+	font-size: 0.8rem;
+}
+
 .fill {
 	display: flex;
 	align-items: center;
@@ -221,7 +250,7 @@ hr {
 }
 
 .about-title {
-	color: #13022C;
+	color: black;
 }
 
 .about-description {
@@ -304,8 +333,14 @@ footer, .push {
 }
 
 .image-product-description {
-	/* TODO: Chiedere a chillu bucchin e Mirk le specifiche per font-size e font-weight */
+	color: #AAAAAA;
+	font-size: 20px;
 	margin-bottom: 3%;
+}
+
+.product-detail-description {
+	color: #AAAAAA;
+	font-size: 24px;
 }
 
 .form-contact{

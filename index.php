@@ -43,7 +43,7 @@
         </a>
     </div>
 </div>
-<div class="container-fluid" style="margin-bottom: 45px">
+<div class="container-fluid social-icons">
     <div class="row" style="margin-top:30px">
         <div class="col">
             <div class="social-container"> <a class="behance-image" href="https://www.behance.net/mirkodagnese" target="_blank"></a></div>
