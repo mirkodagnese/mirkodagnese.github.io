@@ -272,10 +272,23 @@ footer, .push {
 	flex-direction: column;
 }
 
+.image-product-container {
+	margin-bottom: 3%;
+}
+
 .image-product-detail {
-	object-position:0 20%;
-	aspect-ratio: 1400/800;
-	margin-bottom: 6%;
+	object-position: center;
+	margin-bottom: 3%;
+}
+
+.image-product-description-container {
+	display: flex;
+	align-items: center;
+}
+
+.image-product-description {
+	/* TODO: Chiedere a chillu bucchin e Mirk le specifiche per font-size e font-weight */
+	margin-bottom: 3%;
 }
 
 .form-contact{

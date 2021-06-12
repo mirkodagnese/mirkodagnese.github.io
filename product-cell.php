@@ -19,7 +19,7 @@ if (isset($name)) {
         <div style='vertical-align: middle'>
           <h6 style='color: black'>{$title}</h6>
           <h5 style='color: black'>{$shortDescription}</h5>
-          <hr align='left' size='2' width='20%' style='background-color: #13022C'>
+          <hr style='background-color: #13022C; width: 20%; margin-left: 0; border: 2px solid;'>
           <p style='color: black'>VIEW PROJECT →</p>
         </div>
       </div>

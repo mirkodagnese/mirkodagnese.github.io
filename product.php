@@ -40,7 +40,7 @@ echo "
     <div class='description-product'>
         <h4>{$title}</h4>
         <h2>{$shortDescription}</h2>
-        <hr align='left' size='2' width='20%' style='background-color: #13022C'>
+        <hr style='background-color: #13022C; width: 20%; margin-left: 0; border: 2px solid;'>
         <p style='color: rgb(51, 51, 51)'>{$description}</p>
     </div>
 
@@ -50,20 +50,43 @@ if (!empty($images) && $images != null) {
     foreach ($images as $img) {
         switch ($img->getLayout()) {
             case ProductImageLayout::FULLSCREEN:
-                echo "<img id='product-image' class='image-product-detail' src='{$img->getSource()}' alt=''>";
+                echo "<img id='product-image' class='image-product-detail' style='aspect-ratio: 1400/800;' src='{$img->getSource()}' alt=''>";
                 break;
             case ProductImageLayout::TWO_COLUMNS:
-                echo "IMAGE WITH LAYOUT: TWO_COLUMNS";
+                $sources = $img->getTwoSources();
+                if (count($sources) < 3 && count($sources) > 0) {
+                    echo "<div class='row image-product-container'>";
+                    foreach ($sources as $source) {
+                        echo "<div class='col-md-6'>
+                                <img id='product-image' class='image-product-detail' src='{$source}' alt=''>
+                              </div>";
+                    }
+                    echo "</div>";
+                }
                 break;
             case ProductImageLayout::RIGHT_DESCRIPTION:
-                echo "IMAGE WITH LAYOUT: RIGHT_DESCRIPTION";
-
-                break;
-            case ProductImageLayout::LEFT_DESCRIPTION:
-                echo "IMAGE WITH LAYOUT: LEFT_DESCRIPTION";
+                echo "<div class='row image-product-container'>
+                        <div class='col-md'>
+                            <img id='product-image' class='image-product-detail' style='aspect-ratio: 700/800' src='{$img->getSource()}' alt=''>
+                        </div>
+                        <div class='col-md image-product-description-container'>
+                            <p class='image-product-description' style='margin-bottom: 0'> {$img->getDescription()} </p>
+                        </div>
+                     </div>";
                 break;
             case ProductImageLayout::BOTTOM_DESCRIPTION:
-                echo "IMAGE WITH LAYOUT: BOTTOM_DESCRIPTION";
+                echo "<div class='col-md image-product-container'>
+                        <img id='product-image' class='image-product-detail' src='{$img->getSource()}' alt=''>
+                        <p class='image-product-description'> {$img->getDescription()} </p>
+                     </div>";
+                break;
+            case ProductImageLayout::DESCRIPTION_ONLY:
+                echo "<div class='row image-product-container'>
+                        <div class='col-md-6'></div>
+                        <div class='col-md-6 image-product-description-container'>
+                            <p class='image-product-description' style='margin-bottom: 0'> {$img->getDescription()} </p>
+                        </div>
+                     </div>";
                 break;
             default:
                 echo "#### NO CASE PRESENT WITH INTEGER {$img->getLayout()} ####";
