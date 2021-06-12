@@ -37,14 +37,17 @@ mark {
 	display: inline-block;
 	background-color: transparent;
 	color: #AAAAAA;
+	font-weight: lighter;
 }
 
 .nav-selected {
 	color: #333333;
+	font-weight: 500;
 }
 
 mark:hover {
 	color: #333333;
+	font-weight: 500;
 }
 
 .h1-custom {
