@@ -44,7 +44,7 @@ echo "
         <p class='product-detail-description'>{$description}</p>
     </div>
 
-    <div class='col-md fill images-list-product-detail'>";
+    <div class='col-md fill images-list-product-detail' style='padding: 0'>";
 
 if (!empty($images) && $images != null) {
     foreach ($images as $img) {
@@ -78,8 +78,8 @@ if (!empty($images) && $images != null) {
                 }
                 break;
             case ProductImageLayout::RIGHT_DESCRIPTION:
-                echo "<div class='row image-product-container'>
-                        <div class='col-md-6 image-product-detail'>
+                echo "<div class='row' style='width: 100%'>
+                        <div class='col-md-6 image-product-detail' style='padding-left: 0'>
                             <img id='product-image' class='image-product-detail image-product-detail-mobile' style='aspect-ratio: 700/800' src='{$img->getSource()}' alt=''>
                         </div>
                         <div class='col-md-6 image-product-description-container'>
@@ -88,13 +88,15 @@ if (!empty($images) && $images != null) {
                      </div>";
                 break;
             case ProductImageLayout::BOTTOM_DESCRIPTION:
-                echo "<div class='col-md image-product-container'>
-                        <img id='product-image' class='image-product-detail' src='{$img->getSource()}' alt=''>
-                        <p class='image-product-description'> {$img->getDescription()} </p>
+                echo "<div class='col-md image-product-container' style='margin-bottom: 0'>
+                        <div class='row'>
+                            <img id='product-image' class='image-product-detail' src='{$img->getSource()}' alt=''>
+                            <p class='image-product-description'> {$img->getDescription()} </p>
+                        </div>
                      </div>";
                 break;
             case ProductImageLayout::DESCRIPTION_ONLY:
-                echo "<div class='row image-product-container'>
+                echo "<div class='row image-product-container' style='margin-bottom: 0'>
                         <div class='col-md-6'></div>
                         <div class='col-md-6 image-product-description-container'>
                             <p class='image-product-description' style='margin-bottom: 0'> {$img->getDescription()} </p>
