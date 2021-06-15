@@ -112,9 +112,9 @@ $GLOBALS['data'] = array(
             "\"If you add a touch of humanity to your social media marketing, you will get better results\"."),
             new ProductImage("img/various-social/social-05.jpg",
                 ProductImageLayout::FULLSCREEN),
-            new ProductImage("img/various-social/social-05.jpg",
+            new ProductImage("img/various-social/social-06.jpg",
                 ProductImageLayout::FULLSCREEN),
-            new ProductImage("img/various-social/social-05.jpg",
+            new ProductImage("img/various-social/social-07.jpg",
                 ProductImageLayout::FULLSCREEN),
         )
     ),
