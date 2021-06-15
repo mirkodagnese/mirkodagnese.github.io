@@ -66,4 +66,7 @@ echo '
         </div>
     </div>
 </nav>
+<script>
+    document.getElementById("myLogo").style.marginBottom = window.innerHeight/8 + "px";
+</script>
 ';
