@@ -54,14 +54,27 @@ if (!empty($images) && $images != null) {
                 break;
             case ProductImageLayout::TWO_COLUMNS:
                 $sources = $img->getTwoSources();
+                $description = $img->getDescription();
                 if (count($sources) < 3 && count($sources) > 0) {
-                    echo "<div class='row image-product-container'>";
-                    foreach ($sources as $source) {
-                        echo "<div class='col-md-6'>
+                    echo "<div class='col-md'>
+                            <div class='row image-product-container'";
+                    echo !empty($description) ? "style='margin-bottom: 0'>" : ">";
+                    foreach ($sources as $index=>$source) {
+                        $padding = "";
+                        if ($index == 0) {
+                            $padding = "padding-left: 0";
+                        } else if ($index == count($sources)-1) {
+                            $padding = "padding-right: 0";
+                        }
+                        echo "<div class='col-md-6' style='{$padding}'>
                                 <img id='product-image' class='image-product-detail' src='{$source}' alt=''>
                               </div>";
                     }
-                    echo "</div>";
+                    if ($img->getDescription()) {
+                        echo "<p class='image-product-description' style='margin-top: 3%'> {$img->getDescription()} </p>";
+                    }
+                    echo "    </div>
+                          </div>";
                 }
                 break;
             case ProductImageLayout::RIGHT_DESCRIPTION:
