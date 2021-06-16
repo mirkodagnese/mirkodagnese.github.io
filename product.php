@@ -57,8 +57,8 @@ if (!empty($images) && $images != null) {
                 $description = $img->getDescription();
                 if (count($sources) < 3 && count($sources) > 0) {
                     echo "<div class='col-md'>
-                            <div class='row image-product-container'";
-                    echo !empty($description) ? "style='margin-bottom: 0'>" : ">";
+                            <div class='row'";
+                    echo !empty($description) || count($sources) == 1 ? "style='margin-bottom: 0'>" : ">";
                     foreach ($sources as $index=>$source) {
                         $padding = "";
                         if ($index == 0) {
@@ -66,12 +66,12 @@ if (!empty($images) && $images != null) {
                         } else if ($index == count($sources)-1) {
                             $padding = "padding-right: 0";
                         }
-                        echo "<div class='col-md-6' style='{$padding}'>
+                        echo "<div class='col-md-6 image-product-detail' style='{$padding}'>
                                 <img id='product-image' class='image-product-detail' src='{$source}' alt=''>
                               </div>";
                     }
                     if ($img->getDescription()) {
-                        echo "<p class='image-product-description' style='margin-top: 3%'> {$img->getDescription()} </p>";
+                        echo "<p class='image-product-description'> {$img->getDescription()} </p>";
                     }
                     echo "    </div>
                           </div>";
@@ -83,7 +83,7 @@ if (!empty($images) && $images != null) {
                             <img id='product-image' class='image-product-detail image-product-detail-mobile' style='aspect-ratio: 700/800' src='{$img->getSource()}' alt=''>
                         </div>
                         <div class='col-md-6 image-product-description-container'>
-                            <p class='image-product-description' style='margin-bottom: 0'> {$img->getDescription()} </p>
+                            <p class='image-product-description'> {$img->getDescription()} </p>
                         </div>
                      </div>";
                 break;
@@ -96,12 +96,21 @@ if (!empty($images) && $images != null) {
                      </div>";
                 break;
             case ProductImageLayout::DESCRIPTION_ONLY:
-                echo "<div class='row image-product-container' style='margin-bottom: 0'>
-                        <div class='col-md-6'></div>
-                        <div class='col-md-6 image-product-description-container'>
+                echo "<div id='desc-only' class='row image-product-container'>
+                        <div id='desc-only-space'></div>
+                        <div class='col-md image-product-description-container'>
                             <p class='image-product-description' style='margin-bottom: 0'> {$img->getDescription()} </p>
                         </div>
-                     </div>";
+                        <script>
+                            if (window.innerWidth > 767) {
+                                document.getElementById('desc-only-space').className = 'col-md';
+                            }
+                        </script>
+                     </div>
+                     <script>
+                        document.getElementById('desc-only').style.minHeight = document.getElementById('product-image').height+'px';
+                     </script>
+                     ";
                 break;
             default:
                 echo "#### NO CASE PRESENT WITH INTEGER {$img->getLayout()} ####";

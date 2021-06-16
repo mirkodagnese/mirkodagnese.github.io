@@ -87,7 +87,7 @@ $GLOBALS['data'] = array(
         )
     ),
     "various" => new Product("VARIOUS",
-        "Post Design Social Media",
+        "Social Media Posts Design",
         "Several advs have been created for the main social platforms such as Facebok and Instagram.\nIn the following slides there are images relating to customers such as: E. Marinella, Bisi, Bi-Lareral, Panamar, Jazzy Bar, R-evolurion, Club Sorrisi and ExBase.",
         "img/various-social/various-social.jpg",
         "#933B98A6",

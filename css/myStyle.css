@@ -16,6 +16,7 @@ img {
 }
 
 .navbar {
+	margin-bottom: 150px;
 	padding: 0;
 	box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.15);
 }
@@ -134,6 +135,10 @@ mark:hover {
 	display: inline-block;
 	float:left;
 	margin-right: 15px;
+}
+
+.social-icons {
+	margin-bottom: 120px;
 }
 
 .navbar-logo {

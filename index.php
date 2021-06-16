@@ -20,13 +20,6 @@
 <?php include("custom-header.php"); ?>
 
 <!-- presentation code goes here -->
-<!--
-<div id="print">
-
-</div>
-
-<?php #echo "<script> document.getElementById('print').innerText = 'height: ' + window.innerHeight + ' – width: ' + window.innerWidth; </script>"; ?>
--->
 
 <div class="container-fluid">
     <div class="row">
@@ -50,7 +43,7 @@
         </a>
     </div>
 </div>
-<div id="social-icons" class="container-fluid">
+<div class="container-fluid social-icons">
     <div class="row" style="margin-top:30px">
         <div class="col">
             <div class="social-container"> <a class="behance-image" href="https://www.behance.net/mirkodagnese" target="_blank"></a></div>
@@ -60,10 +53,6 @@
         </div>
     </div>
 </div>
-
-<script>
-    document.getElementById("social-icons").style.marginBottom = window.innerHeight/8 + "px";
-</script>
 
 <!-- projects code goes here
 

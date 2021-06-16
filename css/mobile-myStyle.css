@@ -89,14 +89,20 @@
 
         .image-product-detail {
             margin-bottom: 10% !important;
+            padding: 0;
         }
 
         .image-product-container {
-            margin-bottom: 10% !important;
+            margin-bottom: 10%;
         }
 
         .image-product-description {
             font-size: 12px;
+            margin-bottom: 10%;
+        }
+
+        .image-product-description-container {
+            padding: 0;
         }
 
         .product-detail-description {
