@@ -54,27 +54,10 @@
     </div>
 </div>
 
-<!-- projects code goes here
-
-<a href='product.php' style='text-decoration: none'>
-    <div class='project-cell' style='margin-top: 120px'>
-        <div class='row' style="margin: 0">
-            <div class='col-md-5'>
-                <div style='vertical-align: middle'>
-                    <h6 style='margin-top: 80px; color: black'>{$title}</h6>
-                    <h5 style='color: black'>{$shortDescription}</h5>
-                    <hr align='left' size='2' width='20%' style='background-color: #13022C'>
-                    <p style='color: black'>VIEW PROJECT →</p>
-                </div>
-            </div>
-            <div class='col-md-7 fill' style='height: 300px'> <img src='{$thumbnail}' alt='' style='object-position:0'> </div>
-        </div>
-    </div>
-</a>
--->
+<!-- projects code goes here -->
 <?php include("products-list.php"); ?>
 
-<!-- ancorpoint code goes here -->
+<!-- anchor-point code goes here -->
 
 <?php include("anchor-point.php"); ?>
 
