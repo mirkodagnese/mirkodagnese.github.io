@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <h1 class="h1-custom">Hi, I’m Mirko.<br>
+        Graphic & Web<br>
+        Designer living<br>
+        in Naples, Italy.</h1>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row" style="margin-top: 25px">
+    <a href="#" style="text-decoration: none; color: black"> <!-- Navigate to About page -->
+      <div class="col-md" style="display: flex; align-items: baseline; margin-bottom: 0.5rem">
+        <p style="float: left; margin-bottom: 0">ABOUT ME</p>
+        <div class="arrow-container">
+          <img class="arrow-image" style="width: 30px" src="../../../../my-portfolio-php/img/arrowRight.svg" alt="">
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="container-fluid social-icons">
+  <div class="row" style="margin-top:30px">
+    <div class="col">
+      <div class="social-container" *ngFor="let social of socials">
+        <a class="{{ social[0] }}" href="{{ social[1] }}" target="_blank"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- projects code goes here -->
+
+<project-cell *ngFor="let project of projects" [project]="project"></project-cell>
+
+<!-- ancorpoint code goes here -->
+
+<?php include("anchor-point.php"); ?>
+

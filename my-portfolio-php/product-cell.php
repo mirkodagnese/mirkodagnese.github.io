@@ -35,10 +35,8 @@ if (isset($name)) {
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
 <script>
 $(function() {
-  setTimeout(function() {
     $('#$name-caption').addClass('hovered');
     $('#$name-caption-container').addClass('hovered');
-  }, 1000);
 });
 </script>
 

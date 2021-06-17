@@ -1,0 +1,73 @@
+/* PROJECTS PAGE STYLE */
+
+.arrow-container {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.arrow-image {
+  display: block;
+  vertical-align: middle;
+}
+
+.behance-image {
+  display: block;
+  vertical-align: middle;
+  background-image: url("../../../../my-portfolio-php/img/socialBehance.svg");
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+}
+
+.behance-image:hover {
+  background-image: url("../../../../my-portfolio-php/img/socialBehance-hover.svg");
+}
+
+.dribble-image {
+  display: block;
+  vertical-align: middle;
+  background-image: url("../../../../my-portfolio-php/img/socialDribble.svg");
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+}
+
+.dribble-image:hover {
+  background-image: url("../../../../my-portfolio-php/img/socialDribble-hover.svg");
+}
+
+.linkedin-image {
+  display: block;
+  vertical-align: middle;
+  background-image: url("../../../../my-portfolio-php/img/socialLinkedin.svg");
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+}
+
+.linkedin-image:hover {
+  background-image: url("../../../../my-portfolio-php/img/socialLinkedin-hover.svg");
+}
+
+.instagram-image {
+  display: block;
+  vertical-align: middle;
+  background-image: url("../../../../my-portfolio-php/img/socialInstagram.svg");
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+}
+
+.instagram-image:hover {
+  background-image: url("../../../../my-portfolio-php/img/socialInstagram-hover.svg");
+}
+
+.social-container {
+  display: inline-block;
+  float:left;
+  margin-right: 15px;
+}
+
+.social-icons {
+  margin-bottom: 120px;
+}
