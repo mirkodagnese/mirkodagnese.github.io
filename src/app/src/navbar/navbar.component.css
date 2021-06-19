@@ -1,0 +1,123 @@
+/* NAVBAR STYLE */
+
+.navbar {
+  margin-bottom: 150px;
+  padding: 0;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    margin-bottom: 65px;
+    padding: 0 10px;
+  }
+}
+
+.navbar-light .navbar-brand {
+  color: black;
+}
+
+.navbar-nav {
+  margin-left: auto !important;
+}
+
+.nav-link {
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-link, .contacts-nav-link {
+    padding: 12px 0 !important;
+  }
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.contacts-nav-link {
+  padding-right: 0 !important;
+}
+
+mark {
+  display: inline-block;
+  background-color: transparent !important;
+  color: #AAAAAA;
+  font-weight: lighter;
+}
+
+.nav-selected {
+  color: #333333;
+  font-weight: 500;
+}
+
+mark:hover {
+  color: #333333;
+  font-weight: 500;
+}
+
+.navbar-logo {
+  height: 30px;
+  display: block;
+  padding-left: 4px;
+}
+
+/* HAMBURGER MENU */
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  outline: 0;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#000;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+.ham2 .top {
+  stroke-dasharray: 40 121;
+}
+.ham2 .bottom {
+  stroke-dasharray: 40 121;
+}
+.ham2.active .top {
+  stroke-dashoffset: -102px;
+}
+.ham2.active .bottom {
+  stroke-dashoffset: -102px;
+}

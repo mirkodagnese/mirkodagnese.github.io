@@ -1,0 +1,36 @@
+/* ANCHOR POINT STYLE */
+
+.anchor-point {
+  padding: 0 80px;
+  margin: 0 5px;
+}
+.div-anchor-point {
+  margin-top: 65px;
+  margin-bottom: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-text-anchor-point {
+  margin: 0;
+  color: black;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 350px) {
+  .p-text-anchor-point {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .div-anchor-point {
+    margin-top: 25px;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
