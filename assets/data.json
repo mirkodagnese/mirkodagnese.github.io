@@ -185,8 +185,8 @@
       },
       {
         "source": "",
-        "twoSources": ["../../assets/various-social/social-03.jpg", ""],
-        "layout": 2,
+        "twoSources": ["../../assets/various-social/social-03.jpg"],
+        "layout": 1,
         "description": ""
       },
       {
@@ -240,12 +240,6 @@
         "twoSources": ["../../assets/aside/aside-02.jpg", "../../assets/aside/aside-03.jpg"],
         "layout": 1,
         "description": "Preview of the cover and some pages from the magazine \"Aside\". The following magazine has a total of 64 pages."
-      },
-      {
-        "source": "../../assets/aside/aside-03.jpg",
-        "twoSources": [],
-        "layout": 0,
-        "description": ""
       },
       {
         "source": "../../assets/aside/aside-04.jpg",
