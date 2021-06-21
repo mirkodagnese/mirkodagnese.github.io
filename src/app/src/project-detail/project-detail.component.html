@@ -23,12 +23,16 @@
                 <img id='product-image-1' class='image-product-detail' style="aspect-ratio: 700/800" src='{{ source }}' alt=''>
               </div>
 
-              <p *ngIf="image.description && image.description.length > 0" class='image-product-description'> {{ image.description.replace(regex, "") }}
+              <div *ngIf="image.twoSources.length === 1" class="col-md-6 image-product-detail" style="padding-right: 0"></div>
+
+              <p *ngIf="image.description && image.description.length > 0"
+                 class='image-product-description'>
+                {{ image.description.replace(regex, "") }}
                 <a *ngIf="image.description.includes('www')"
-                   href="{{ image.description.match(regex)[0] }}"
+                   href="https://{{ getHyperLink(image.description) }}"
                    target="_blank"
                 >
-                  {{ image.description.match(regex)[0] }}
+                  {{ getHyperLink(image.description) }}
                 </a>
               </p>
             </div>
@@ -37,16 +41,16 @@
 
         <!-- RIGHT_DESCRIPTION Layout -->
         <div *ngIf="image.layout === 2" class='row product-right-description' style='width: 100%'>
-          <div class='col-md-6 image-product-detail' style='padding-left: 0'>
+          <div class='col-md-6 image-product-detail' style='padding: 0'>
             <img id='product-image-2' class='image-product-detail image-product-detail-mobile' style='aspect-ratio: 700/800' src='{{ image.source }}' alt=''>
           </div>
           <div class='col-md-6 image-product-description-container'>
             <p class='image-product-description'> {{ image.description.replace(regex, "") }}
               <a *ngIf="image.description.includes('www')"
-                 href="{{ image.description.match(regex)[0] }}"
+                 href="https://{{ getHyperLink(image.description) }}"
                  target="_blank"
               >
-                {{ image.description.match(regex)[0] }}
+                {{ getHyperLink(image.description) }}
               </a>
             </p>
           </div>
@@ -57,11 +61,11 @@
           <div class='row'>
             <img id='product-image-3' class='image-product-detail' src='{{ image.source }}' alt=''>
             <p class='image-product-description'> {{ image.description.replace(regex, "") }}
-              <a *ngIf="image.description.includes('www')"
-                 href="{{ image.description.match(regex)[0] }}"
+              <a id="description-url" *ngIf="image.description.includes('www')"
+                 href="https://{{ getHyperLink(image.description) }}"
                  target="_blank"
               >
-                {{ image.description.match(regex)[0] }}
+                {{ getHyperLink(image.description) }}
               </a>
             </p>
           </div>
@@ -73,10 +77,10 @@
           <div class='col-md image-product-description-container'>
             <p class='image-product-description'> {{ image.description.replace(regex, "") }}
               <a *ngIf="image.description.includes('www')"
-                 href="{{ image.description.match(regex)[0] }}"
+                 href="https://{{ getHyperLink(image.description) }}"
                  target="_blank"
               >
-                {{ image.description.match(regex)[0] }}
+                {{ getHyperLink(image.description) }}
               </a>
             </p>
           </div>

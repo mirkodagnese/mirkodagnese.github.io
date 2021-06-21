@@ -21,4 +21,8 @@ export class ProjectDetailComponent implements OnInit {
     });
   }
 
+  getHyperLink(description: string): string {
+    return description.match(this.regex)[0];
+  }
+
 }
