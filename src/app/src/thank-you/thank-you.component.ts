@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectObject } from "../../../model/project-object";
 import { ActivatedRoute } from "@angular/router";
 
 @Component({
@@ -24,7 +23,7 @@ export class ThankYouComponent implements OnInit {
 
   setup(): void {
     let footerHeight = document.getElementsByClassName("text-footer")[0].clientHeight;
-    let navbarMarginBottom = window.innerWidth > 767 ? 150 : 65;
+    let navbarMarginBottom = window.innerWidth > 767 ? 100 : 65;
     let thanksContainer = document.getElementById("thanks-container");
     let calc = window.innerHeight - footerHeight - (navbarMarginBottom*2);
     console.log(calc);
