@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {FormControl, FormGroup} from "@angular/forms";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'contact-component',
@@ -9,34 +9,57 @@ import {FormControl, FormGroup} from "@angular/forms";
 })
 export class ContactComponent implements OnInit {
 
-  /*
-  contactForm: FormGroup;
-  first_name: FormControl;
-  last_name: FormControl;
-  phone_number: FormControl;
-  email: FormControl;
-  message: FormControl;
-  */
+  formspreeURL = "https://formspree.io/f/mqkwboaj";
+  myFormId = "my-form";
+  firstNameId = "first_name";
+  lastNameId = "last_name";
+  telephoneId = "phone_number";
+  replyToId = "_replyto";
+  messageId = "message";
+  // Anti-spam field
+  gotchaId = "_gotcha";
 
-  constructor(private http: HttpClient) { }
+  myForm: HTMLFormElement;
+
+  constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
+    this.myForm = <HTMLFormElement>document.getElementById(this.myFormId);
   }
 
   onSubmit(): void {
-    /*const email = this.contactForm.value;
 
-    this.http.post('https://formspree.io/asdlf7asdf',
-      {
-        name: email.first_name + " " + email.last_name,
-        telephone: email.phone_number,
-        replyto: email.email,
-        message: email.messages
-      }).subscribe(
-      response => {
-        console.log(response);
-      }
-    );*/
+    const fullName = this.getFormField(this.firstNameId).value + " " + this.getFormField(this.lastNameId).value;
+    const subject = "Portfolio contact - " + fullName;
+    const telephone = this.getFormField(this.telephoneId).value;
+    const replyTo = this.getFormField(this.replyToId).value;
+    const message = this.getFormField(this.messageId).value;
+    const gotcha = this.getFormField(this.gotchaId).value;
+
+    if (gotcha.length <= 0 && this.myForm.reportValidity()) {
+      this.http.post(this.formspreeURL,
+          {
+            name: fullName,
+            subject: subject,
+            telephone: telephone,
+            replyto: replyTo,
+            message: message
+          }).subscribe(
+          response => {
+
+          }
+      );
+    }
   }
+
+  getFormField(name: string): HTMLInputElement {
+    return <HTMLInputElement>document.getElementsByName(name)[0];
+  }
+
+  thankYou(): void {
+    this.myForm.reset();
+    this.router.navigate(['/thank-you']);
+  }
+
 
 }

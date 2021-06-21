@@ -1,16 +1,16 @@
 <h2 class="h2-custom">Contact Me</h2>
 <div class="form-contact">
-  <form class="container-fluid" action="" method="post" style="display: flex; align-items: center; flex-direction: column; max-width: 1024px">
+  <form id="my-form" class="container-fluid" action="{{ formspreeURL }}" method="post" style="display: flex; align-items: center; flex-direction: column; max-width: 1024px">
     <div class="col-md form-field">
       <div class="row top-text">
         <div class="col-md"> YOUR NAME* </div>
       </div>
       <div class="row">
         <div class="col-md">
-          <input class="my-form" name="first_name" type="text" placeholder="First name..." required minlength="3" maxlength="12">
+          <input class="my-form" name="{{ firstNameId }}" type="text" placeholder="First name..." required minlength="3" maxlength="12">
         </div>
         <div class="col-md top-space">
-          <input class="my-form" name="last_name" type="text" placeholder="Last name..." required minlength="3" maxlength="12">
+          <input class="my-form" name="{{ lastNameId }}" type="text" placeholder="Last name..." required minlength="3" maxlength="12">
         </div>
       </div>
     </div>
@@ -20,7 +20,7 @@
       </div>
       <div class="row">
         <div class="col-md">
-          <input class="my-form" name="email" type="email" placeholder="Eg. example@email.com" required>
+          <input class="my-form" name="{{ replyToId }}" type="email" placeholder="Eg. example@email.com" required>
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@
       </div>
       <div class="row">
         <div class="col-md">
-          <input class="my-form" name="phone_number" type="tel" placeholder="Eg. +33 3333333333">
+          <input class="my-form" name="{{ telephoneId }}" type="tel" placeholder="Eg. +33 3333333333">
         </div>
       </div>
     </div>
@@ -40,12 +40,13 @@
       </div>
       <div class="row">
         <div class="col-md">
-          <textarea class="my-form" name="message" cols="30" rows="10" placeholder="Please enter your comments…" minlength="10" maxlength="1000" required></textarea>
+          <textarea class="my-form" name="{{ messageId }}" cols="30" rows="10" placeholder="Please enter your comments…" minlength="10" maxlength="1000" required></textarea>
         </div>
       </div>
     </div>
+    <input type="text" name="{{ gotchaId }}" style="display:none" />
     <div style="display: flex; align-items: center">
-      <button class="click-submit" type="submit" value="Submit" name="submit"> Submit </button>
+      <button (click)="thankYou()" class="click-submit" type="submit" name="submit"> Submit </button>
     </div>
   </form>
 </div>

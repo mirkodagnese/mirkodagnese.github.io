@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProjectsComponent } from "./src/projects/projects.component";
 import { AboutComponent } from "./src/about/about.component";
 import { ContactComponent } from "./src/contact/contact.component";
-import {ProjectDetailComponent} from "./src/project-detail/project-detail.component";
+import { ProjectDetailComponent } from "./src/project-detail/project-detail.component";
+import {ThankYouComponent} from "./src/thank-you/thank-you.component";
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'project-detail',
     component: ProjectDetailComponent
+  },
+  {
+    path: 'thank-you',
+    component: ThankYouComponent
   }
 ];
 

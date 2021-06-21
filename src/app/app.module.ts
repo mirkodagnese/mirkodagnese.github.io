@@ -13,6 +13,7 @@ import { ContactComponent } from './src/contact/contact.component';
 import { ProjectDetailComponent } from './src/project-detail/project-detail.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
+import { ThankYouComponent } from './src/thank-you/thank-you.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HttpClientModule } from "@angular/common/http";
     AnchorPointComponent,
     AboutComponent,
     ContactComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    ThankYouComponent
   ],
   imports: [
     BrowserModule,
