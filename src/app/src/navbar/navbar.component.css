@@ -64,6 +64,16 @@ mark:hover {
   padding-left: 4px;
 }
 
+@media only screen and (max-width: 767px) {
+  #navbarSupportedContent {
+    overflow: hidden;
+  }
+
+  .nav-item {
+    display: initial;
+  }
+}
+
 /* HAMBURGER MENU */
 
 .navbar-toggler {

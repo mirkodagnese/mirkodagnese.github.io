@@ -26,6 +26,8 @@ export class NavbarComponent implements OnInit {
     }
   ];
 
+  collapsed = true;
+
   ngOnInit(): void {
     const currentPath = document.location.pathname === "/" ? "/projects" : document.location.pathname
     this.tabs.forEach((tab) => tab.selected = tab.link === currentPath);
@@ -34,6 +36,10 @@ export class NavbarComponent implements OnInit {
   tabClicked(tabIndex: number) {
     this.tabs.forEach((tab) => tab.selected = false);
     this.tabs[tabIndex].selected = true;
+  }
+
+  burgerMenuClicked(): void {
+    this.collapsed = !this.collapsed;
   }
 
 }
