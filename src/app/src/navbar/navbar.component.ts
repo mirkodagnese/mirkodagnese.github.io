@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {Router, RouterModule} from "@angular/router";
 
 @Component({
   selector: 'app-navbar',
@@ -29,8 +28,13 @@ export class NavbarComponent implements OnInit {
   collapsed = true;
 
   ngOnInit(): void {
+    this.checkCurrentPath();
+  }
+
+  checkCurrentPath(): void {
     const currentPath = document.location.pathname === "/" ? "/projects" : document.location.pathname
     this.tabs.forEach((tab) => tab.selected = tab.link === currentPath);
+
   }
 
   tabClicked(tabIndex: number) {
