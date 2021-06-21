@@ -45,8 +45,8 @@ export class ContactComponent implements OnInit {
             replyto: replyTo,
             message: message
           }).subscribe(
-          response => {
-
+          (response: any) => {
+              this.thankYou(response.ok);
           }
       );
     }
@@ -56,9 +56,9 @@ export class ContactComponent implements OnInit {
     return <HTMLInputElement>document.getElementsByName(name)[0];
   }
 
-  thankYou(): void {
+  thankYou(ok: boolean): void {
     this.myForm.reset();
-    this.router.navigate(['/thank-you']);
+    this.router.navigate(['/thank-you'], { queryParams: { result: ok } });
   }
 
 

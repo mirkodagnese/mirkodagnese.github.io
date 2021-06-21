@@ -40,6 +40,7 @@ export class NavbarComponent implements OnInit {
   tabClicked(tabIndex: number) {
     this.tabs.forEach((tab) => tab.selected = false);
     this.tabs[tabIndex].selected = true;
+    this.burgerMenuClicked();
   }
 
   burgerMenuClicked(): void {

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectObject } from "../../../model/project-object";
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-thank-you',
@@ -7,13 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThankYouComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.setup();
-    setTimeout(() => {
-      document.location.href = "/";
-    }, 1500);
+    this.route.queryParams.subscribe((params) => {
+      let result = JSON.parse(params.result);
+      document.getElementById("result").innerText = result ? "Thank You!" : "Ops...\nPlease, try again.";
+      setTimeout(() => {
+        document.location.href = result ? "/" : "/contact";
+      }, 1500);
+    });
   }
 
   setup(): void {
