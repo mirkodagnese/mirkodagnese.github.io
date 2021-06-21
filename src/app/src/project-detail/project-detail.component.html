@@ -1,69 +1,69 @@
 <div class="container-fluid">
-<div class='col-md-8' style='margin-left: auto; margin-right: auto;'>
-  <div class='description-product'>
-    <h4>{{ project.title }}</h4>
-    <h2>{{ project.shortDescription }}</h2>
-    <hr style='color: black; width: 20%; margin-left: 0; border: 2px solid;'>
-    <p class='product-detail-description'>{{ project.description }}</p>
-  </div>
+  <div class='col-md-8' style='margin-left: auto; margin-right: auto;'>
+    <div class='description-product'>
+      <h4>{{ project.title }}</h4>
+      <h2>{{ project.shortDescription }}</h2>
+      <hr style='color: black; width: 20%; margin-left: 0; border: 2px solid;'>
+      <p class='product-detail-description'>{{ project.description }}</p>
+    </div>
 
-  <div class='col-md fill images-list-product-detail' style='padding: 0'>
-    <div *ngFor="let image of project.images">
+    <div class='col-md fill images-list-product-detail' style='padding: 0'>
+      <div *ngFor="let image of project.images">
 
-      <!-- FULLSCREEN Layout -->
-      <img *ngIf="image.layout === 0" id='product-image-0' class='image-product-detail' style='aspect-ratio: 1400/800;' src='{{ image.source }}' alt=''>
+        <!-- FULLSCREEN Layout -->
+        <img *ngIf="image.layout === 0" id='product-image-0' class='image-product-detail' style='aspect-ratio: 1400/800;' src='{{ image.source }}' alt=''>
 
-      <!-- TWO_COLUMNS Layout -->
-      <div *ngIf="image.layout === 1" class='col-md'>
-        <div class='row' [ngStyle]="(image.description && image.description.length > 0) || image.twoSources.length === 1 ? {'margin-bottom': 0} : null">
-          <div *ngFor="let source of image.twoSources; let i = index"
-               class='col-md-6 image-product-detail'
-               [ngStyle]="i === 0 ? {'padding-left': 0} : {'padding-right': 0}">
-            <img id='product-image-1' class='image-product-detail' src='{{ source }}' alt=''>
+        <!-- TWO_COLUMNS Layout -->
+        <div *ngIf="image.layout === 1" class='col-md'>
+          <div class='row' [ngStyle]="(image.description && image.description.length > 0) || image.twoSources.length === 1 ? {'margin-bottom': 0} : null">
+            <div *ngFor="let source of image.twoSources; let i = index"
+                 class='col-md-6 image-product-detail'
+                 [ngStyle]="i === 0 ? {'padding-left': 0} : {'padding-right': 0}">
+              <img id='product-image-1' class='image-product-detail' src='{{ source }}' alt=''>
+            </div>
+
+            <p *ngIf="image.description && image.description.length > 0" class='image-product-description'> {{ image.description }} </p>
           </div>
-
-          <p *ngIf="image.description && image.description.length > 0" class='image-product-description'> {{ image.description }} </p>
         </div>
-      </div>
 
-      <!-- RIGHT_DESCRIPTION Layout -->
-      <div *ngIf="image.layout === 2" class='row product-right-description' style='width: 100%'>
-        <div class='col-md-6 image-product-detail' style='padding-left: 0'>
-          <img id='product-image-2' class='image-product-detail image-product-detail-mobile' style='aspect-ratio: 700/800' src='{{ image.source }}' alt=''>
+        <!-- RIGHT_DESCRIPTION Layout -->
+        <div *ngIf="image.layout === 2" class='row product-right-description' style='width: 100%'>
+          <div class='col-md-6 image-product-detail' style='padding-left: 0'>
+            <img id='product-image-2' class='image-product-detail image-product-detail-mobile' style='aspect-ratio: 700/800' src='{{ image.source }}' alt=''>
+          </div>
+          <div class='col-md-6 image-product-description-container'>
+            <p class='image-product-description'> {{ image.description }} </p>
+          </div>
         </div>
-        <div class='col-md-6 image-product-description-container'>
-          <p class='image-product-description'> {{ image.description }} </p>
-        </div>
-      </div>
 
-      <!-- BOTTOM_DESCRIPTION Layout -->
-      <div *ngIf="image.layout === 3" class="col-md image-product-container" style="margin-bottom: 0">
-        <div class='row'>
-          <img id='product-image-3' class='image-product-detail' src='{{ image.source }}' alt=''>
-          <p class='image-product-description'> {{ image.description }} </p>
+        <!-- BOTTOM_DESCRIPTION Layout -->
+        <div *ngIf="image.layout === 3" class="col-md image-product-container" style="margin-bottom: 0">
+          <div class='row'>
+            <img id='product-image-3' class='image-product-detail' src='{{ image.source }}' alt=''>
+            <p class='image-product-description'> {{ image.description }} </p>
+          </div>
         </div>
-      </div>
 
-      <!-- DESCRIPTION_ONLY Layout -->
-      <div *ngIf="image.layout === 4" id='desc-only' class='row image-product-container'>
-        <div id='desc-only-space'></div>
-        <div class='col-md image-product-description-container'>
-          <p class='image-product-description' style='margin-bottom: 0'> {{ image.description }} </p>
+        <!-- DESCRIPTION_ONLY Layout -->
+        <div *ngIf="image.layout === 4" id='desc-only' class='row image-product-container'>
+          <div id='desc-only-space'></div>
+          <div class='col-md image-product-description-container'>
+            <p class='image-product-description' style='margin-bottom: 0'> {{ image.description }} </p>
+          </div>
+          <script>
+            if (window.innerWidth > 767) {
+              document.getElementById('desc-only-space').className = 'col-md';
+            }
+          </script>
         </div>
         <script>
-          if (window.innerWidth > 767) {
-            document.getElementById('desc-only-space').className = 'col-md';
-          }
+          document.getElementById('desc-only').style.minHeight = document.getElementById('product-image').height+'px';
         </script>
+
       </div>
-      <script>
-        document.getElementById('desc-only').style.minHeight = document.getElementById('product-image').height+'px';
-      </script>
-
     </div>
-  </div>
 
+  </div>
 </div>
 
 <anchor-point></anchor-point>
-</div>
