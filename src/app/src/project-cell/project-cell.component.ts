@@ -21,10 +21,12 @@ export class ProjectCellComponent {
     const projectCaption = document.getElementById(this.project.name + '-caption');
 
     if (projectCaption && projectCaptionContainer) {
-      let css = "#" + this.project.name + "-caption-container.hovered { transition: background-color 300ms; }\n" +
+      let css = "@media (hover: hover) and (pointer: fine) {\n" +
+          "#" + this.project.name + "-caption-container.hovered { transition: background-color 300ms; }\n" +
         ".project-cell:hover #" + this.project.name + "-caption-container.hovered { background-color: " + this.project.hoverColor + "; }\n" +
         "#" + this.project.name + "-caption { margin-left: 0; transition: margin 300ms; }\n" +
-        ".project-cell:hover #" + this.project.name + "-caption.hovered { margin-left: 20%; }";
+        ".project-cell:hover #" + this.project.name + "-caption.hovered { margin-left: 20%; }\n" +
+          "}";
       let style = document.createElement("style");
 
       if (style.style) {

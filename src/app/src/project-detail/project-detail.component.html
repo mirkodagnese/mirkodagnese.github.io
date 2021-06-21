@@ -1,3 +1,4 @@
+<div class="container-fluid">
 <div class='col-md-8' style='margin-left: auto; margin-right: auto;'>
   <div class='description-product'>
     <h4>{{ project.title }}</h4>
@@ -26,7 +27,7 @@
       </div>
 
       <!-- RIGHT_DESCRIPTION Layout -->
-      <div *ngIf="image.layout === 2" class='row' style='width: 100%'>
+      <div *ngIf="image.layout === 2" class='row product-right-description' style='width: 100%'>
         <div class='col-md-6 image-product-detail' style='padding-left: 0'>
           <img id='product-image-2' class='image-product-detail image-product-detail-mobile' style='aspect-ratio: 700/800' src='{{ image.source }}' alt=''>
         </div>
@@ -65,3 +66,4 @@
 </div>
 
 <anchor-point></anchor-point>
+</div>

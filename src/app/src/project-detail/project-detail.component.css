@@ -63,4 +63,8 @@
   .product-detail-description {
     font-size: 14px;
   }
+
+  .product-right-description {
+    margin: 0;
+  }
 }

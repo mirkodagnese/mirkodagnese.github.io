@@ -14,8 +14,10 @@
   margin-bottom: 0;
 }
 
-.project-cell:hover, .project-cell:hover * {
-  color: white;
+@media (hover: hover) and (pointer: fine) {
+  .project-cell:hover, .project-cell:hover * {
+    color: white;
+  }
 }
 
 .project-cell-caption-container {
