@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="560a3d9d-8f23-410a-b92d-9ac4d55a5976" name="Default Changelist" comment="" />
+    <list default="true" id="560a3d9d-8f23-410a-b92d-9ac4d55a5976" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/brainston/Brainston-03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/brainston/Brainston-03.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/brainston/Brainston-04.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/brainston/Brainston-04.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/brainston/Brainston-05.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/brainston/Brainston-05.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/brainston/Brainston-06.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/brainston/Brainston-06.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/brainston/Brainston-07.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/brainston/Brainston-07.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/brainston/Brainston-08.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/brainston/Brainston-08.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/brainston/Brainston-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/brainston/Brainston-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/brainston/Brainston-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/data.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,13 +92,15 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

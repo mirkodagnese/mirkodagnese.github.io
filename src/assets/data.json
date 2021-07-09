@@ -22,56 +22,38 @@
       {
         "source": "../../assets/brainston/Brainston-03.jpg",
         "twoSources": [],
-        "layout": 0,
-        "description": ""
-      },
-      {
-        "source": "../../assets/brainston/Brainston-04.jpg",
-        "twoSources": [],
         "layout": 2,
         "description": "The buffer area indicates the minimum essential space between the logo and other elements. \nThe area in question is exactly equivalent to 1/3x."
       },
       {
-        "source": "../../assets/brainston/Brainston-05.jpg",
+        "source": "../../assets/brainston/Brainston-04.jpg",
         "twoSources": [],
         "layout": 0,
         "description": ""
       },
       {
-        "source": "../../assets/brainston/Brainston-06.jpg",
+        "source": "../../assets/brainston/Brainston-05.jpg",
         "twoSources": [],
         "layout": 2,
         "description": "The logo maintains excellent readability in all dimensions, but it is advisable not to reduce it below 5 cm in height."
       },
       {
+        "source": "../../assets/brainston/Brainston-06.jpg",
+        "twoSources": [],
+        "layout": 0,
+        "description": ""
+      },
+      {
         "source": "../../assets/brainston/Brainston-07.jpg",
         "twoSources": [],
-        "layout": 3,
-        "description": "The following icons represented above were used for the development of the website."
+        "layout": 0,
+        "description": ""
       },
       {
         "source": "../../assets/brainston/Brainston-08.jpg",
         "twoSources": [],
-        "layout": 0,
-        "description": ""
-      },
-      {
-        "source": "../../assets/brainston/Brainston-09.jpg",
-        "twoSources": [],
         "layout": 3,
-        "description": "Flowchart has been realized through the use of www.miro.com"
-      },
-      {
-        "source": "../../assets/brainston/Brainston-10.jpg",
-        "twoSources": [],
-        "layout": 0,
-        "description": ""
-      },
-      {
-        "source": "../../assets/brainston/Brainston-11.jpg",
-        "twoSources": [],
-        "layout": 0,
-        "description": ""
+        "description": "The following icons represented above were used for the development of the website."
       }
     ]
   },
