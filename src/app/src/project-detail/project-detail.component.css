@@ -47,6 +47,10 @@
     padding: 0;
   }
 
+  .left-description-image {
+    margin-bottom: 0 !important;
+  }
+
   .image-product-container {
     margin-bottom: 10%;
   }

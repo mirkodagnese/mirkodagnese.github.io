@@ -94,6 +94,41 @@
           document.getElementById('desc-only').style.minHeight = document.getElementById('product-image').height+'px';
         </script>
 
+        <!-- LEFT_DESCRIPTION Layout -->
+        <div *ngIf="image.layout === 5" class='product-right-description' style='width: 100%'>
+
+          <div *ngIf="screenWidth > 767 else mobileLayout" class="row">
+            <div class='col-md-6 image-product-description-container'>
+              <p class='image-product-description'> {{ image.description.replace(regex, "") }}
+                <a *ngIf="image.description.includes('www')"
+                   href="https://{{ getHyperLink(image.description) }}"
+                   target="_blank"
+                >
+                  {{ getHyperLink(image.description) }}
+                </a>
+              </p>
+            </div>
+            <div class='col-md-6 image-product-detail' style='padding: 0'>
+              <img id='product-image-5' class='image-product-detail image-product-detail-mobile' style='aspect-ratio: 700/800' src='{{ image.source }}' alt=''>
+            </div>
+          </div>
+          <ng-template #mobileLayout class="row">
+            <div class='col-md-6 image-product-detail left-description-image' style='padding: 0'>
+              <img id='product-image-5' class='image-product-detail image-product-detail-mobile' style='aspect-ratio: 700/800' src='{{ image.source }}' alt=''>
+            </div>
+            <div class='col-md-6 image-product-description-container'>
+              <p class='image-product-description'> {{ image.description.replace(regex, "") }}
+                <a *ngIf="image.description.includes('www')"
+                   href="https://{{ getHyperLink(image.description) }}"
+                   target="_blank"
+                >
+                  {{ getHyperLink(image.description) }}
+                </a>
+              </p>
+            </div>
+          </ng-template>
+        </div>
+
       </div>
     </div>
 

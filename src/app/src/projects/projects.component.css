@@ -62,8 +62,24 @@
   margin-bottom: 120px;
 }
 
+.about-me .arrow-image {
+  transition: margin-left 200ms;
+}
+
+.about-me:hover .arrow-image {
+  margin-left: 15px;
+}
+
+.about-me-a {
+  width: 33%
+}
+
 @media only screen and (max-width: 767px) {
   .social-icons {
     margin-bottom: 45px;
+  }
+
+  .about-me-a {
+    width: 100%
   }
 }

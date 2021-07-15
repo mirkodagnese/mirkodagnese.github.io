@@ -6,13 +6,6 @@
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-@media only screen and (max-width: 767px) {
-  .navbar {
-    margin-bottom: 65px;
-    padding: 0 10px;
-  }
-}
-
 .navbar-light .navbar-brand {
   color: black;
 }
@@ -23,12 +16,6 @@
 
 .nav-link {
   padding: 1rem;
-}
-
-@media only screen and (max-width: 767px) {
-  .nav-link, .contacts-nav-link {
-    padding: 12px 0 !important;
-  }
 }
 
 .nav-item {
@@ -64,13 +51,22 @@ mark:hover {
   padding-left: 4px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
+  .navbar {
+    margin-bottom: 65px;
+    padding: 0 10px;
+  }
+
   #navbarSupportedContent {
     overflow: hidden;
   }
 
   .nav-item {
     display: initial;
+  }
+
+  .nav-link, .contacts-nav-link {
+    padding: 12px 0 !important;
   }
 }
 
