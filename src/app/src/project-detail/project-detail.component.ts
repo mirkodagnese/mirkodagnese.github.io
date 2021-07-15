@@ -17,14 +17,14 @@ export class ProjectDetailComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.screenWidth = screen.width;
+        this.screenWidth = window.innerWidth;
         this.route.queryParams.subscribe((params) => {
             this.project = ProjectObject.getProjectByName(params.name);
         });
     }
 
     @HostListener('window:resize', ['$event']) onResize() {
-        this.screenWidth = screen.width;
+        this.screenWidth = window.innerWidth;
     }
 
     getHyperLink(description: string): string {
