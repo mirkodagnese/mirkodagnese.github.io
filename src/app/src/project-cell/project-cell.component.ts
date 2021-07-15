@@ -50,7 +50,7 @@ export class ProjectCellComponent {
 
   navigateToDetail(name: string): void {
     const url = this.router.createUrlTree(['/project-detail'], { queryParams: { name: name } });
-    window.open(url.toString(), '_blank');
+    this.router.navigateByUrl(url.toString()).then();
   }
 
 }

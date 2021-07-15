@@ -5,6 +5,7 @@ import { AboutComponent } from "./src/about/about.component";
 import { ContactComponent } from "./src/contact/contact.component";
 import { ProjectDetailComponent } from "./src/project-detail/project-detail.component";
 import {ThankYouComponent} from "./src/thank-you/thank-you.component";
+import { NavbarComponent } from "./src/navbar/navbar.component";
 
 const routes: Routes = [
   {

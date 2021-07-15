@@ -18,6 +18,7 @@ export class ProjectDetailComponent implements OnInit {
 
     ngOnInit(): void {
         this.screenWidth = window.innerWidth;
+        document.getElementById('myLogo').scrollIntoView();
         this.route.queryParams.subscribe((params) => {
             this.project = ProjectObject.getProjectByName(params.name);
         });
